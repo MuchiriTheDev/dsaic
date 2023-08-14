@@ -9,6 +9,4 @@ Check out the live version [HERE](https://github.com/DSAIC-Site/Frontend)
 
 ## Contributing to the project
 
-Contributions are always welcome!
-
 See [`contributing.md`](https://github.com/DSAIC-Site/Frontend/blob/main/CONTRIBUTING.md) for ways to get started.
