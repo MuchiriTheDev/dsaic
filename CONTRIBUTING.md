@@ -14,7 +14,7 @@
 #### 2. Open issues
 
 - Go to [open issues](https://github.com/DSAIC-Site/Frontend/issues)
-- select an issue of your choice that is `open` or `need help` or is `up-for-grabs` and is not assigned.
+- Select an issue of your choice that is `open` or `need help` or is `up-for-grabs` and is not assigned.
 - Comment on the issue (if you'd like to be assigned to it) - that way the issue can be assigned to you.
 
 ### Fork the repository (repo)
