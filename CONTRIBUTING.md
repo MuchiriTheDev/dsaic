@@ -42,6 +42,10 @@ If this is your first time forking our repo, this is all you need to do for this
 git clone https://github.com/DSAIC-Site/Frontend.git && cd Frontend
 ```
 
+```bash
+cd Frontend
+```
+
 Make sure you checkout the `develop` branch by running the command `git checkout develop`
 
 If you've already forked the repo and created the develop branch, you'll want to ensure your fork and your develop branch is configured and that it's up to date. This will save you the headache of potential merge conflicts.
