@@ -44,7 +44,7 @@ git clone https://github.com/DSAIC-Site/Frontend.git
 cd Frontend
 ```
 
-Make sure you checkout the `develop` branch by running the command `git checkout develop`
+Make sure you create a branch and checkout eg. `develop` branch by running the command `git checkout -b develop`
 
 If you've already forked the repo and created the develop branch, you'll want to ensure your fork and your develop branch is configured and that it's up to date. This will save you the headache of potential merge conflicts.
 
