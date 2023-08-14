@@ -3,7 +3,7 @@
   <p> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving Hand" width="25px" height="25px"> Welcome to Data Science and Artificial Intelligence Club Website!</p>
 </h1>
 
-This is the repo for the frontend website of the Data Science and Artificial Intelligence Club
+This is the repo for the frontend website of the Data Science and Artificial Intelligence Club.
 
 Check out the live version [HERE](https://github.com/DSAIC-Site/Frontend)
 
