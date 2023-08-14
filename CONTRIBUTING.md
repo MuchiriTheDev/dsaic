@@ -1,7 +1,5 @@
 # How to contribute to DSAIC Website
 
-Please note we have a [code of conduct](https://github.com/DSAIC-Site/Frontend/blob/main/README.md), please follow it in all your interactions with the project.
-
 ## Contributing procedure
 
 ### Find an issue to work on
