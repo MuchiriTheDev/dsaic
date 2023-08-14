@@ -39,7 +39,7 @@ If you're ready to contribute and create your PR, it will help to set up a local
 If this is your first time forking our repo, this is all you need to do for this step:
 
 ```bash
-git clone https://github.com/DSAIC-Site/Frontend.git && cd Frontend
+git clone https://github.com/DSAIC-Site/Frontend.git
 ```
 
 ```bash
