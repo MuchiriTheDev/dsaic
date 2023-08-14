@@ -5,7 +5,7 @@
 
 This is the repo for the frontend website of the Data Science and Artificial Intelligence Club
 
-Check out the live version [HERE](https://github.com/DSAIC-DeKUT/website)
+Check out the live version [HERE](https://github.com/DSAIC-Site/Frontend)
 
 ## Contributing to the project
 
