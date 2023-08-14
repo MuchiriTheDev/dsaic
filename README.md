@@ -12,5 +12,3 @@ Check out the live version [HERE](https://github.com/DSAIC-Site/Frontend)
 Contributions are always welcome!
 
 See [`contributing.md`](https://github.com/DSAIC-Site/Frontend/blob/main/CONTRIBUTING.md) for ways to get started.
-
-Please adhere to this project's [`code of conduct`](https://github.com/DSAIC-DeKUT/website/blob/main/CODE_OF_CONDUCT.md).
