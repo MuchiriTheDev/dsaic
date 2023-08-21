@@ -9,9 +9,11 @@ import { BsBoxArrowUp } from "react-icons/bs";
 import ec2 from "../../assets/ec2.jpg"
 import "./landing.css";
 import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const Landing = () => {
   return (
+    <div className="landing">
     <div className="landing-page">
       <Navbar />
       <div className="landing-page-hero">
@@ -150,6 +152,8 @@ const Landing = () => {
           <img src={ec2} alt="gallery-pic" />
           </div>
           </div>
+    </div>
+    <Footer />
     </div>
   );
 };
