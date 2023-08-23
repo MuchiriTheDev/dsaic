@@ -23,7 +23,7 @@ const Landing = () => {
             Connect, Collaborate, learn everything Data Science & Artificial
             Intelligence
           </h3>
-          <button className="">Join DSAIC</button>
+          <button className="join-dsaic-btn">Join DSAIC</button>
         </div>
       </div>
       <div className="motive">
