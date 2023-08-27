@@ -1,15 +1,6 @@
 html {
   font-size: 80%;
 }
-/*body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}*/
 
 .login-container {
   display: flex;
@@ -34,7 +25,6 @@ html {
   background-color: rgb(0, 151, 255);
   color: white;
   border: none;
-  border-radius: 10px;
   padding: 15px 25px;
   cursor: pointer;
   text-align: center;
@@ -50,6 +40,10 @@ html {
   flex: 1;
   text-align: center;
   width: 120%;
+}
+.login-head span{
+  display: block;
+  margin-top: 16px;
 }
 
 
@@ -143,7 +137,4 @@ html {
 }
 .login-register a{
   color: #007bff;
-}
-.email-input{
-  margin-bottom: 50px;
 }

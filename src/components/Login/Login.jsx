@@ -34,7 +34,7 @@ function Login() {
         <button className="image-button" onClick={handleGoBack} style={{fontSize: '20px'}}> &larr; Go back</button>
       </div>
       <div className="login-content">
-      <div className="login-head"><h2>Data Science & Artificial Intelligence</h2> <h2>Club</h2></div>  
+      <div className="login-head"><h2>Data Science & Artificial Intelligence <span>Club</span></h2></div>  
       <div className="login-form">
         <h2>Welcome Back</h2> <h2>Join & Explore Dsaic</h2>
         <div className="input-login">
