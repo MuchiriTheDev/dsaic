@@ -34,19 +34,21 @@ function Login() {
         <button className="image-button" onClick={handleGoBack} style={{fontSize: '20px'}}> &larr; Go back</button>
       </div>
       <div className="login-content">
-      <div className="login-head"><h2>Data Science & Artificial Intelligence <span>Club</span></h2></div>  
+      <div className="login-head">
+        <h1>Data Science & Artificial Intelligence <span>Club</span></h1>
+      </div>  
       <div className="login-form">
-        <h2>Welcome Back</h2> <h2>Join & Explore Dsaic</h2>
-        <div className="input-login">
+        <h1>Welcome Back <span>Join & Explore Dsaic</span></h1>
+      <div className="input-login">
           <input
             type="email"
             id="email"
             value={email}
             onChange={handleEmailChange}
-            required
             placeholder=" "
+            required
           />
-          <label htmlFor="email*" style={{fontSize: '15px'}}>Email*</label>
+          <label htmlFor="email" style={{fontSize: '18px'}}>Email*</label>
         </div>
         <div className="input-login">
           <input
@@ -54,10 +56,10 @@ function Login() {
             id="password"
             value={password}
             onChange={handlePasswordChange}
-            required
             placeholder=" "
+            required
           />
-          <label htmlFor="password*" style={{fontSize: '15px'}}>Password*</label>
+          <label htmlFor="password" style={{fontSize: '18px'}}>Password*</label>
         </div>
         
         

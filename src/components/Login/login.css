@@ -13,14 +13,14 @@ html {
 }
 
 .login-image {
-  flex: 2;
+  flex: 1;
   background-image: url("/src/assets/loginbckg.jpg");
   background-size: cover;
   background-position: center;
 }
 .image-button{
   position: absolute;
-  top: 30px;
+  top: 25px;
   left: 30px;
   background-color: rgb(0, 151, 255);
   color: white;
@@ -39,27 +39,30 @@ html {
 .login-head{
   flex: 1;
   text-align: center;
-  width: 120%;
+  width: 93%;
 }
 .login-head span{
   display: block;
   margin-top: 16px;
 }
-
-
 .login-form {
-  height: 70%;
-  width: 110%;
-  flex: 1;
+  height: 80%;
+  width: 90%;
+  flex: 3;
   padding: 20px;
   order: 1;
   background-color: #F5F0F8;
   position: relative;
   align-items: center;
 }
+.login-form span{
+  display: block;
+  margin-top: 16px;
+}
 
-.login-form h2 {
-  margin-bottom: 20px;
+.login-form h1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .input-login{
@@ -72,42 +75,24 @@ html {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
-  transition: border-color 0.3s;
+  font-size: 16px;
 }
 .input-login label{
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-100%);
-  color: #ccc;
-  background-color: white;
-  transition: top 0.3s, font-size 0.3s, left 0.3s;
+  padding: 10px;
   pointer-events: none;
-  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+  background: #fff;
 }
-.input-login input:focus{
-  border-color: #6c63ff;
-}
-.input-login input:focus + label {
-  top: 10px;
-  font-size: 12px;
-  color: black;
-  left: 8px;
-  z-index: 2;
-}
-.input-login input:not(:placeholder-shown) + label{
-  top: 10px;
-  font-size: 12px;
-  color: #6c63ff;
-  left: 8px;
-}
-.input-login input:placeholder-shown + label{
-  top: 50%;
-  font-size: 16px;
-  color: #555;
-  left: 15px;
-  background-color: transparent;
-}
+.input-login input:focus + label, input:not(:placeholder-shown) + label {
+  opacity: 1;
+  transform: scale(0.75) translateY(-70%) translateX(-12px);
+} 
 .login-form button {
   width: 97%;
   height: 50px;
