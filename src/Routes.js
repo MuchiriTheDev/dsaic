@@ -4,6 +4,8 @@ import Articles from "./components/Articles/Articles";
 
 import Landing from "./components/Landing/LandingPage";
 import Register from "./components/Register/Register";
+import Login from "./components/Login/Login"
+import Events from "./components/Events/Events"
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,13 @@ const router = createBrowserRouter([
   {
     path: "/articles",
     element: <Articles />,
+  }
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/Events",
+    element: <Events />
   },
 ]);
 
