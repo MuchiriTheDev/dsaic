@@ -4,6 +4,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Landing from "./components/Landing/LandingPage";
 import Register from "./components/Register/Register";
 import Login from "./components/Login/Login"
+import Events from "./components/Events/Events"
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/Events",
+    element: <Events />
   },
 ]);
 
