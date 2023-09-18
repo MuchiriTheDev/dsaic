@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './login.css';
-import { Link } from "react-router-dom";
+import { AiOutlineSwapLeft } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -31,14 +32,15 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-image">
-        <button className="image-button" onClick={handleGoBack} style={{fontSize: '20px'}}> &larr; Go back</button>
+      <Link to="/signup" className='reglinks'><button className="image-button" onClick={handleGoBack} style={{fontSize: '16px'}}><AiOutlineSwapLeft /> Go back</button></Link>
       </div>
       <div className="login-content">
+      
       <div className="login-head">
-        <h1>Data Science & Artificial Intelligence <span>Club</span></h1>
+        <h3>Data Science & Artificial Intelligence <span>Club</span></h3>
       </div>  
       <div className="login-form">
-        <h1>Welcome Back <span>Join & Explore Dsaic</span></h1>
+        <h4>Welcome Back <span>Join & Explore Dsaic</span></h4>
       <div className="input-login">
           <input
             type="email"
@@ -48,7 +50,7 @@ function Login() {
             placeholder=" "
             required
           />
-          <label htmlFor="email" style={{fontSize: '18px'}}>Email*</label>
+          <label htmlFor="email" style={{fontSize: '14px'}}>Email*</label>
         </div>
         <div className="input-login">
           <input
@@ -59,14 +61,12 @@ function Login() {
             placeholder=" "
             required
           />
-          <label htmlFor="password" style={{fontSize: '18px'}}>Password*</label>
+          <label htmlFor="password" style={{fontSize: '14px'}}>Password*</label>
         </div>
-        
-        
-        <button onClick={handleLogin} style={{fontSize: '20px'}}>Login</button>
-        <a href="#">Forgot Password?</a>
+        <button type="submit" onClick={handleLogin} style={{fontSize: '16px'}}>Login</button>
+        <a href="/">Forgot Password?</a>
       </div>
-      <div className="login-register"><p>Do you have an account? <a href="#">Register</a></p></div>
+      <div className="login-register"><p>Do you have an account? <a href="/signup">Register</a></p></div>
       </div>
     </div>
   );

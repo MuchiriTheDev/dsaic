@@ -7,7 +7,7 @@ const Register = () => {
     <section className="section-register">
       <div className="register-container">
         <div className="register-img-box">
-          <a href="#" className="btn-go-back">
+          <a href="/" className="btn-go-back">
             &larr; Go back
           </a>
         </div>

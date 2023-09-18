@@ -36,7 +36,7 @@
 .links:last-child {
   margin-right: 0;
 }
-button {
+.articles-nav button {
   margin: 20px;
   color: black;
   border-radius: 8px;
