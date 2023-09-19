@@ -129,11 +129,9 @@
   text-decoration: none;
 }
 .login-register{
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: auto;
   padding: 20px;
 }
 .login-register a{

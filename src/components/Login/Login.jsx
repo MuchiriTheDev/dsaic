@@ -3,7 +3,7 @@ import './login.css';
 import { AiOutlineSwapLeft } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-function Login() {
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
