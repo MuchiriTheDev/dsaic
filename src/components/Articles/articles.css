@@ -98,7 +98,6 @@
 .card-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   width: 80%;
   height: 30rem;
   padding: 0.8rem;
@@ -107,19 +106,11 @@
   border-radius: 2rem;
   border-top-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
-  background-image: linear-gradient(
-    500deg,
-    #dcd7db 0%,
-    #e9c9e1 50%,
-    #efc1e5 60%,
-    #f6bbe9 74%,
-    #fdb4ec 100%
-  );
+  background-color: var(--cards-bg);
 }
 .article-title {
   font-size: 2rem;
-
-  font-weight: 2000;
+  font-weight: 700;
   margin-bottom: 0.2rem;
 }
 .article-info {
@@ -188,13 +179,8 @@
   width: 10rem;
 
   border-radius: 9px;
-  background-image: linear-gradient(
-    500deg,
-    #8e42ea 0%,
-    #c277ed 64%,
-    #e6b8ff 74%
-  );
-  color: white;
+  background-color: var(--btn);
+  color: var(--text-light);
   border: none;
   padding: 4px;
   border-radius: 9px;
@@ -266,7 +252,10 @@
   position: relative;
   margin-left: 1rem;
   width: 100%;
+  background-color: var(--cards-bg);
   margin-bottom: 4rem;
+  border-radius: 2rem;
+  border-bottom-right-radius: 8rem;
 }
 .grid-article-owner {
   display: flex;
