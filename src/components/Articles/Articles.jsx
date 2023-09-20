@@ -1,7 +1,6 @@
 import React from "react";
 import "./articles.css";
 import { Link } from "react-router-dom";
-
 import typing from "../../assets/typing.jpg";
 import { BiSearch } from "react-icons/bi";
 import Footer from "../Footer/Footer";

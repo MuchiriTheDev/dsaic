@@ -9,7 +9,12 @@
 :root{
   --primary: #FFFFFF;
   --text-dark: #000000;
-  --text-light: #FFFFFF; 
+  --text-light: #FFFFFF;
+  --cards-bg: #f2f2f2;
+  --cards-bg-hover: #e6e6e6;
+  --btn: #007bff;
+  --btn-hover: #0069d9;
+  --reg-card: #F5F0F8;
 }
 body{
   font-family: 'Montserrat', sans-serif;

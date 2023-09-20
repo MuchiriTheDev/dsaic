@@ -15,16 +15,16 @@
   }
     .event-card-highlighted {
       width: 80%;
-      height: 550px;
+      height: 450px;
       margin: 50px auto;
-      background-color: #f2f2f2;
+      background-color: var(--cards-bg);
       border-radius: 2rem;
       border-bottom-right-radius: 8rem;
     }
     .inner-desc-card{
       width: 50%;
       height: 100%;
-      background-color: #f2f2f2;
+      background-color: var(--cards-bg);
       padding: 50px;
       text-align: center;
     }
@@ -39,21 +39,22 @@
       padding: 40px;
     }
     .rsvp-button {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
+      background-color: var(--btn);
+      color: var(--text-light);
+      padding: 8px 12px;
+      font-size: 12px;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
       width: 100px;
     }
     
     .rsvp-button:hover {
-      background-color: #834b85;
+      background-color: var(--btn-hover);
     }
     .highlighted-event-image{
       float: right;
-      height: 500px;
+      height: 400px;
       margin-right: 20px;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -75,27 +76,32 @@
     .event-card {
       width: 500px;
       text-align: center;
-      background-color: #f2f2f2;
+      background-color: var(--cards-bg);
       border-radius: 2rem;
       border-bottom-right-radius: 8rem;
     }
     
     .event-card-image {
       width: 80%;
-      height: auto;
+      height: 300px;
       margin-top: 10px;
     }
-  
+  .event-card p{
+    font-size: 14px;
+    margin: 10px 0;
+  }
     .rsvp-other-button {
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
+      background-color: var(--btn);
+      color: var(--text-light);
+      font-size: 12px;
+      padding: 8px 12px;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
       cursor: pointer;
+      width: 100px;
     }
     .rsvp-other-button:hover {
-      background-color: #834b85;
+      background-color: var(--btn-hover);
     }
     .search-sort{
       display: flex;
@@ -103,14 +109,17 @@
     }
     .search-tab input{
       font-size: 16px;
-      padding: 10px 20px;
-      border-radius: 1rem;
+      padding: 8px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--btn);
+      outline: none;
       width: 500px;
     }
     .sort-tab button{
-      background-color: #007bff;
-      color: #fff;
-      padding: 10px 20px;
+      background-color: var(--btn);
+      color: var(--text-light);
+      padding: 8px 12px;
+      font-size: 12px;
       border: none;
       border-radius: 16px;
       cursor: pointer;
