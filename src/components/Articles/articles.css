@@ -1,5 +1,3 @@
-/*****************  Navbar *****************/
-
 .articles-nav {
   width: 100%;
   height: 15%;
@@ -36,7 +34,7 @@
 .links:last-child {
   margin-right: 0;
 }
-.articles-nav button {
+button {
   margin: 20px;
   color: black;
   border-radius: 8px;
@@ -98,6 +96,7 @@
 .card-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   width: 80%;
   height: 30rem;
   padding: 0.8rem;
@@ -106,11 +105,19 @@
   border-radius: 2rem;
   border-top-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
-  background-color: var(--cards-bg);
+  background-image: linear-gradient(
+    500deg,
+    #dcd7db 0%,
+    #e9c9e1 50%,
+    #efc1e5 60%,
+    #f6bbe9 74%,
+    #fdb4ec 100%
+  );
 }
 .article-title {
   font-size: 2rem;
-  font-weight: 700;
+
+  font-weight: 2000;
   margin-bottom: 0.2rem;
 }
 .article-info {
@@ -179,8 +186,13 @@
   width: 10rem;
 
   border-radius: 9px;
-  background-color: var(--btn);
-  color: var(--text-light);
+  background-image: linear-gradient(
+    500deg,
+    #8e42ea 0%,
+    #c277ed 64%,
+    #e6b8ff 74%
+  );
+  color: white;
   border: none;
   padding: 4px;
   border-radius: 9px;
@@ -252,10 +264,7 @@
   position: relative;
   margin-left: 1rem;
   width: 100%;
-  background-color: var(--cards-bg);
   margin-bottom: 4rem;
-  border-radius: 2rem;
-  border-bottom-right-radius: 8rem;
 }
 .grid-article-owner {
   display: flex;
