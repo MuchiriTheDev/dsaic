@@ -1,6 +1,7 @@
 import React from "react";
 import "./articles.css";
 import { Link } from "react-router-dom";
+
 import typing from "../../assets/typing.jpg";
 import { BiSearch } from "react-icons/bi";
 import Footer from "../Footer/Footer";
@@ -292,6 +293,51 @@ const Articles = () => {
         <span>4</span>
         <span>5</span>
       </div>
+      {/* <section className="grid-footer">
+        <div className="grid-footer-container">
+          <div className="grid-footer-content">
+            <div className="grid-footer-content-card">
+              <h4>Your Account</h4>
+              <ul>
+                <li>Signup</li>
+                <li>Login</li>
+                <li>Help</li>
+              </ul>
+            </div>
+            <div className="grid-footer-content-card">
+              <h4>Quick Links</h4>
+              <ul>
+                <li>About</li>
+                <li>Team</li>
+                <li>Hackathons</li>
+                <li>Team</li>
+                <li>Resources</li>
+                <li>Events</li>
+              </ul>
+            </div>
+            <div className="grid-footer-content-card">
+              <h4>Socials</h4>
+              <ul>
+                <li>Twitter: @dsaic_dekut</li>
+                <li>LinkedIn: dsaic_dekut</li>
+                <li>Medium: dsaic</li>
+              </ul>
+            </div>
+            <div className="grid-footer-content-card">
+              <h4>Contacts</h4>
+              <ul>
+                <li>Email: hellodsaic@dkut.ac.ke</li>
+                <li>Phone: +254 000 000</li>
+                <li>Address: Private Bag - 10143</li>
+                <li>Location: Nyeri-Mweiga Road</li>
+              </ul>
+            </div>
+          </div>
+          <div className="grid-footer-bottom">
+            <p>2023 @dsaic_dekut</p>
+          </div>
+        </div>
+      </section> */}
       <Footer />
     </div>
   );
