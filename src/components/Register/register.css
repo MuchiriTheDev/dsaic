@@ -53,7 +53,7 @@
   margin-top: 16px;
 }
 .register-form {
-  height: 100%;
+  height: 800px;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -103,6 +103,17 @@
 .input-register input:focus{
   border-bottom: 1px solid var(--btn);
 }
+.input-register select{
+  width: 100%;
+  padding: 8px 10px;
+  border: none;
+  background-color: var(--text-light);
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
 .register-form button {
   width: 50%;
   height: 40px;
@@ -127,6 +138,11 @@
   margin-top: 10px;
   color: var(--btn);
   text-decoration: none;
+}
+.regform-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 .register-login{
   display: flex;
@@ -163,6 +179,7 @@
 @media (max-width: 600px) {
   .register-container {
     flex-direction: column;
+    overflow-y: scroll;
   }
   .register-image {
     display: none;
@@ -188,6 +205,10 @@
   }
   .register-form button {
     width: 100%;
+  }
+  .input-register select{
+    width: 100%;
+    font-size: 10px;
   }
   .register-login {
     width: 100%;
