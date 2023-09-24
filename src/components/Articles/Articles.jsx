@@ -4,44 +4,14 @@ import { Link } from "react-router-dom";
 import typing from "../../assets/typing.jpg";
 import { BiSearch } from "react-icons/bi";
 import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
+import { FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft } from "react-icons/fa";
 
 const Articles = () => {
   return (
     <div className="articles">
-      <div className="articles-nav">
-        <h2 className="logo">Dsaic</h2>
-        <div className="articles-nav-links">
-          <ul>
-            <Link className="links" to="/home">
-              <li>Home</li>
-            </Link>
-            <Link className="links" to="/about">
-              <li>About</li>
-            </Link>
-            <Link className="links" to="/events">
-              <li>Events</li>
-            </Link>
-            <Link className="links" to="/hackathons">
-              <li>Hackathons</li>
-            </Link>
-            <Link className="links" to="/resources">
-              <li>Resources</li>
-            </Link>
-          </ul>
-        </div>
-        <div className="articles-nav-buttons">
-          <Link to="/login">
-            <button className="articles-nav-button">
-              <span>Login</span>
-            </button>
-          </Link>
-          <Link to="/signup">
-            <button className="articles-nav-button">
-              <span>Sign Up</span>
-            </button>
-          </Link>
-        </div>
-      </div>
+      <Navbar />
       <section className="card-section">
         <div className="left-info">
           <div className="upper-text">
@@ -53,8 +23,9 @@ const Articles = () => {
 
               <h1 className="article-title">Title of the Article</h1>
               <p className="article-info">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                doloribus nemo, quo vel cum?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. sit
+                amet consectetur adipisicing elit.Iusto doloribus nemo, quo vel
+                cum?
               </p>
             </div>
             <div className="mini-btns">
@@ -79,12 +50,11 @@ const Articles = () => {
         <div className="dot"></div>
       </div>
 
-      <div className="search-btn">
-        <button className="search-button">
-          <BiSearch size={20} className="icon-search" />
-          Search
-        </button>
+      <div className="grid-search-text">
+        {/* <BiSearch size={20} className="icon-search" /> */}
+        <input type="text" placeholder="Search" class="search-box" />
       </div>
+
       <section className="grid-section">
         <div className="grid-item">
           <img src={typing} alt="person typing" />
@@ -262,6 +232,7 @@ const Articles = () => {
             <button className="grid-read-more">Read More</button>
           </div>
         </div>
+
         <div className="grid-item">
           <img src={typing} alt="person typing" />
           <div className="grid-upper-text">
@@ -286,12 +257,15 @@ const Articles = () => {
         </div>
       </section>
       <div className="numbers">
+        <FaAngleLeft className="arrow" />
         <span>1</span>
         <span>2</span>
         <span>3</span>
         <span>4</span>
         <span>5</span>
+        <FaAngleRight className="arrow" />
       </div>
+
       <Footer />
     </div>
   );
