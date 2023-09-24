@@ -5,6 +5,7 @@
   justify-content: flex-start;
   overflow-x: hidden;
 }
+
 /*****************  Card-section *****************/
 .card-section {
   display: grid;
@@ -12,24 +13,15 @@
   width: 95%;
   height: 30rem;
   padding: 0.8rem;
-
   margin-top: 4rem;
   border-radius: 2rem;
   border-top-right-radius: 0.2rem;
   border-bottom-left-radius: 0.2rem;
-  background-image: linear-gradient(
-    500deg,
-    #dcd7db 0%,
-    #e9c9e1 50%,
-    #efc1e5 60%,
-    #f6bbe9 74%,
-    #fdb4ec 100%
-  );
+  background-color: var(--cards-bg);
 }
 .article-title {
   font-size: 2rem;
-
-  font-weight: 2000;
+  font-weight: 700;
   margin-bottom: 0.2rem;
 }
 .article-info {
@@ -99,14 +91,6 @@
   border-radius: 5px;
   background-color: var(--btn);
   color: var(--text-light);
-  border-radius: 9px;
-  background-image: linear-gradient(
-    500deg,
-    #8e42ea 0%,
-    #c277ed 64%,
-    #e6b8ff 74%
-  );
-  color: white;
   border: none;
   padding: 0.5rem;
   border-radius: 9px;
@@ -183,7 +167,10 @@
   position: relative;
   margin-left: 1rem;
   width: 100%;
+  background-color: var(--cards-bg);
   margin-bottom: 4rem;
+  border-radius: 2rem;
+  border-bottom-right-radius: 8rem;
 }
 .grid-article-owner {
   display: flex;
@@ -416,6 +403,7 @@
     width: 20vw;
   }
 }
+
 @media screen and (min-width: 1025px) and (max-width: 1366px) {
   .grid-article-owner {
     bottom: 18rem;
@@ -434,15 +422,4 @@
   .grid-article-info {
     width: 20vw;
   }
-}
-.grid-footer-bottom {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  margin-top: 20px;
 }
