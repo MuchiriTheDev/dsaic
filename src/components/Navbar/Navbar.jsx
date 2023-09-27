@@ -1,11 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
-import {BiMenuAltLeft} from 'react-icons/bi';
+import { LiaTimesSolid } from "react-icons/lia";
+import { BiMenuAltLeft } from "react-icons/bi";
 import "./navbar.css";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (isMobileMenuOpen) {
+        event.preventDefault();
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+      window.addEventListener("scroll", handleScroll);
+    } else {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMobileMenuOpen]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -52,18 +73,53 @@ const Navbar = () => {
       </div>
       <div className="mobile-nav">
         <div className="nav-toggle" onClick={toggleMobileMenu}>
-          {isMobileMenuOpen ? <FaTimes /> : <BiMenuAltLeft />}
+          {isMobileMenuOpen ? (
+            <LiaTimesSolid size={24} />
+          ) : (
+            <BiMenuAltLeft size={24} />
+          )}
+          {isMobileMenuOpen && (
+            <div className="card-links">
+              <ul>
+                <li>
+                  <Link className="links" to="/home">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/about">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/team">
+                    Team
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/hackathons">
+                    Hackathons
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/resources">
+                    Resources
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/events">
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
         <h2 className="logo">DSAIC</h2>
         <div className="nav-buttons">
           <Link to="/login">
             <button className="nav-button">
               <span>Login</span>
-            </button>
-          </Link>
-          <Link to="/signup">
-            <button className="nav-button">
-              <span>Sign Up</span>
             </button>
           </Link>
         </div>
