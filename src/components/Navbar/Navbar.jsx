@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaHamburger, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import {BiMenuAltLeft} from 'react-icons/bi';
 import "./navbar.css";
 
 const Navbar = () => {
@@ -51,29 +52,7 @@ const Navbar = () => {
       </div>
       <div className="mobile-nav">
         <div className="nav-toggle" onClick={toggleMobileMenu}>
-          {isMobileMenuOpen ? <FaTimes /> : <FaHamburger />}
-        </div>
-        <div className={`nav-links ${isMobileMenuOpen ? "active" : ""}`}>
-          <ul>
-            <Link to="/home">
-              <li>Home</li>
-            </Link>
-            <Link to="/about">
-              <li>About</li>
-            </Link>
-            <Link to="/team">
-              <li>Team</li>
-            </Link>
-            <Link to="/hackathons">
-              <li>Hackathons</li>
-            </Link>
-            <Link to="/resources">
-              <li>Resources</li>
-            </Link>
-            <Link to="/events">
-              <li>Events</li>
-            </Link>
-          </ul>
+          {isMobileMenuOpen ? <FaTimes /> : <BiMenuAltLeft />}
         </div>
         <h2 className="logo">DSAIC</h2>
         <div className="nav-buttons">
