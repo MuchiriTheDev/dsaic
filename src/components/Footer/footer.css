@@ -13,6 +13,7 @@
 .footer-header{
     width: 100%;
     height: 100%;
+    padding: 10px;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -30,16 +31,22 @@
     flex-direction: row;
     justify-content: space-between;   
     gap: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+
+}
+.footer-groups{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .footer-content-card{
-    width: 30%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 20px;
 }
 .footer-content-card h4{
@@ -59,13 +66,42 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: flex-start;   
-    gap: 20px;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
-
-/* @media and (max-width: 700px){
-
-} */
+@media (max-width: 700px) {
+    .footer-container{
+        width: 100%;
+    }
+    .footer-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-groups{
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .footer-content-card{
+        width: 100%;
+    }
+    .footer-content-card ul li{
+        font-size: 1rem;
+    }
+    .footer-bottom{
+        justify-content: center;
+    }
+    .footer-header{
+        width: 80%;
+    }
+    .footer-header .join-dsaic-btn{
+            width: 140px;
+            height: 30px;
+            font-size: 0.8rem;
+    }
+    .footer-header h3{
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}
