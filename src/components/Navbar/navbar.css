@@ -127,7 +127,7 @@
       font-size: 1rem;
     }
 
-  .card-links {
+  .mobile-nav-links {
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -138,7 +138,7 @@
     margin-top: 10px;
     z-index: 1;
     }
-  .card-links ul {
+  .mobile-nav-links ul {
     height: 80%;
     list-style: none;
     display: flex;
@@ -147,7 +147,15 @@
     align-items: center;
   }
 
-  .card-links ul li {
+  .mobile-nav-links ul li {
     margin-bottom: 10px;
+  }
+  .mobile-nav-links button{
+    width: 100px;
+    height: 30px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: var(--btn) !important;
   }
   }
