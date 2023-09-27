@@ -1,107 +1,108 @@
-.footer{
-    width: 100%;
-    background-color: #F8BBEA;
+.footer {
+  width: 100%;
+  background-color: #f8bbea;
 }
-.footer-container{
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer-header{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #000000;
+.footer-header {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #000000;
 }
-.footer-header h3{
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-right: 20px;
+.footer-header h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 20px;
 }
-.footer-content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;   
-    gap: 20px;
-
+.footer-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
 }
-.footer-groups{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.footer-groups {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.footer-content-card{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+.footer-content-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.footer-content-card h4{
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+.footer-content-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
-.footer-content-card ul{
-    list-style: none;
+.footer-content-card ul {
+  list-style: none;
 }
-.footer-content-card ul li{
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: 500;
+.footer-content-card ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
-.footer-bottom{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;   
-    margin: 20px 0;
+.footer-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0;
 }
 @media (max-width: 700px) {
-    .footer-container{
-        width: 100%;
-    }
-    .footer-content{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer-groups{
-        justify-content: space-around;
-        align-items: flex-start;
-    }
-    .footer-content-card{
-        width: 100%;
-    }
-    .footer-content-card ul li{
-        font-size: 1rem;
-    }
-    .footer-bottom{
-        justify-content: center;
-    }
-    .footer-header{
-        width: 80%;
-    }
-    .footer-header .join-dsaic-btn{
-            width: 140px;
-            height: 30px;
-            font-size: 0.8rem;
-    }
-    .footer-header h3{
-        width: 100%;
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
+  .footer-container {
+    width: 100%;
+  }
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-groups {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer-content-card {
+    width: 100%;
+  }
+  .footer-content-card ul li {
+    font-size: 1rem;
+  }
+  .footer-bottom {
+    justify-content: center;
+  }
+  .footer-header {
+    width: 80%;
+  }
+  .footer-header .join-dsaic-btn {
+    width: 140px;
+    height: 30px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: var(--text-light);
+  }
+  .footer-header h3 {
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
 }

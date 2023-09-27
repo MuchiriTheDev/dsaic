@@ -79,7 +79,7 @@ const Navbar = () => {
             <BiMenuAltLeft size={24} />
           )}
           {isMobileMenuOpen && (
-            <div className="card-links">
+            <div className="mobile-nav-links">
               <ul>
                 <li>
                   <Link className="links" to="/home">
@@ -109,6 +109,11 @@ const Navbar = () => {
                 <li>
                   <Link className="links" to="/events">
                     Events
+                  </Link>
+                </li>
+                <li>
+                  <Link className="links" to="/signup">
+                    <button>Sign Up</button>
                   </Link>
                 </li>
               </ul>
