@@ -1,12 +1,8 @@
-<h1 align="center" style="margin-top: 1em; margin-bottom: 3em;">
-  <p><a href="#"><img alt="logo" src="https://i.postimg.cc/25G19FJ7/DSAIC-OFFICIAL-LOGO.jpg" alt="dsaic" width="130"></a></p>
-  <p> <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" alt="Waving Hand" width="25px" height="25px"> Welcome to Data Science and Artificial Intelligence Club Website!</p>
-</h1>
+# React + Vite
 
-This is the repo for the frontend website of the Data Science and Artificial Intelligence Club.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Check out the live version [HERE](https://github.com/DSAIC-Site/Frontend)
+Currently, two official plugins are available:
 
-## Contributing to the project
-
-See [`contributing.md`](https://github.com/DSAIC-Site/Frontend/blob/main/CONTRIBUTING.md) for ways to get started.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
