@@ -1,128 +1,168 @@
-# How to contribute to DSAIC Website
+How to Contribute to DSAIC Website
 
-## Contributing procedure
+Contributing Procedure
 
-### Find an issue to work on
+Find an Issue to Work On
 
-- You can contribute to this project by either creating an issue or by checking out the open issues available.
+You can contribute by either creating an issue or choosing one from the available open issues.
 
-#### 1. Submit an issue
+1. Submit an Issue
 
-- Create a [new issue](https://github.com/DSAIC-Site/Frontend/issues)
-- Comment on the issue (if you'd like to be assigned to it) - that way the issue can be assigned to you.
+Create a new issue.
 
-#### 2. Open issues
+Comment on the issue to be assigned to it.
 
-- Go to [open issues](https://github.com/DSAIC-Site/Frontend/issues)
-- Select an issue of your choice that is `open` or `need help` or is `up-for-grabs` and is not assigned.
-- Comment on the issue (if you'd like to be assigned to it) - that way the issue can be assigned to you.
 
-### Fork the repository (repo)
+2. Open Issues
 
-- If you're not sure, here's how to [fork the repo](https://help.github.com/en/articles/fork-a-repo)
+Go to the open issues.
 
-#### Set up your local environment (optional)
+Select an issue labeled as open, need help, or up-for-grabs that isn’t assigned yet.
 
-If you're ready to contribute and create your PR, it will help to set up a local environment so you can see your changes.
+Comment to be assigned to it.
 
-1. Set up your development environment
 
-   - install your favorite text editor/IDE
-   - install [Nodejs](nodejs.org)
+Fork the Repository
 
-   <br>
+If you're not familiar, here’s a guide on how to fork the repo.
+
+Set Up Your Local Environment
+
+Follow these steps to set up your development environment:
+
+1. Install your development tools
+
+Install your preferred text editor/IDE.
+
+Install Node.js.
+
+
 
 2. Clone your fork
 
-If this is your first time forking our repo, this is all you need to do for this step:
 
-```bash
-git clone https://github.com/DSAIC-Site/Frontend.git
-```
 
-```bash
+git clone https://github.com/YOUR-USERNAME/Frontend.git
 cd Frontend
-```
 
-Make sure you create a branch and checkout eg. `develop` branch by running the command `git checkout -b develop`
+3. Create and switch to a new branch
 
-If you've already forked the repo and created the develop branch, you'll want to ensure your fork and your develop branch is configured and that it's up to date. This will save you the headache of potential merge conflicts.
 
-To [configure your fork](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork):
 
-```
-$ git remote add upstream https://github.com/DSAIC-Site/Frontend.git
-```
+git checkout -b develop
 
-To [sync your fork and branch with the latest changes](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork):
+4. Configure your fork and sync it with the main repo
 
-```bash
-git checkout develop
+
+
+git remote add upstream https://github.com/DSAIC-Site/Frontend.git
 git fetch upstream
 git merge upstream/develop
-```
 
-3. Install dependencies
+5. Install dependencies
 
-We use [npm](https://www.npmjs.com/) to manage dependencies. To install all dependencies, run:
 
-```bash
+
 npm install
-```
 
-<br>
+Make Changes
 
-### Make awesome changes!
+1. Create a new branch for your changes
 
-<br>
 
-1. Create new branch for your changes
 
-```bash
-git checkout -b new_branch_name
-```
+git checkout -b new_feature_branch
 
-2. start development server
+2. Run the development server
 
-```bash
+
+
 npm run dev
-```
 
-<br>
+3. Make changes to the code
+
+
+
+Use your text editor/IDE to work on your assigned issue.
+
+Test your changes by visiting localhost:3000 in your browser.
+
+
+4. Format your code
+
+
+
+Use Prettier to format your code by running:
+
+
+npm run prettier:check
+npm run prettier:format
+
+5. Add and commit your changes
+
+
+
+git add [file_name]
+git commit -m "Describe the changes you made [Fixes #1234]"
+
+6. Push your changes to your fork
+
+
+
+git push -u origin new_feature_branch
+
+Submit Your Pull Request (PR) 🚀
+
+1. Go to your forked repo on GitHub and submit a PR to the develop branch of the DSAIC-Site/Frontend repo.
+
+
+2. In the PR description, reference the issue it resolves using GitHub's keyword system.
+
+Example: Fixes #1234.
+
+
+
+
+Review and Merge Process
+
+Your PR will be reviewed as soon as possible.
+
+There might be suggestions for improvements or changes before it is merged.
+
+
 
 ---
 
-3. Make changes to the codebase
+Important: Branching Workflow
 
-- Open this directory in your favorite text editor / IDE, and see your changes live by visiting `localhost:3000` from your browser
-- Pro Tip: Explore scripts within `package.json` for more build options
-- Pro Tip: Use [Prettier](https://prettier.io/) to format your code before committing by running `npm run prettier:check` and `npm run prettier:format` to check and fix formatting issues
+1. Each member must work on their own branch. This is mandatory to ensure smooth website development.
 
-4. Add changes made to the repo addressing an issue
 
-```bash
-git add [file_name]
-```
+2. Compare your branch to the production branch after making your changes.
 
-5. Commit and prepare for pull request (PR). In your PR commit message, reference the issue it resolves (see [how to link a commit message to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).
 
-```bash
-git commit -m "brief description of changes [Fixes #1234]"
-```
+3. The team lead will compare changes from production to the sub-main branch.
 
-6. Push to your GitHub account
 
-```bash
-git push -u origin [feature_branch]
-```
+4. The project lead will finally merge changes from sub-main to the main branch.
 
-### Submit your Pull Request (PR)🚀
 
-- After your changes are commited to your GitHub fork, submit a pull request (PR) to the `develop` branch of the `DSAIC-Site/Frontend` repo
-- In your PR description, reference the issue it resolves (see [linking a pull request to an issue using a keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword))
-  - ex. `Updates out of date content [Fixes #1234]`
 
-### Sit back, relax and wait for your PR to be reviewed/merged
+This flow ensures that the website remains stable and runs smoothly.
 
-- We'll review your PR as soon as possible
-- We may suggest some changes or improvements or alternatives.
+
+---
+
+Contribution.md File
+
+Each development area (frontend and backend) will have a contribution.md file. It is mandatory for everyone contributing to add their name and GitHub profile link to this file. Start by adding your information following this format:
+
+
+CONTRIBUTORS
+
+----------------  
+1.Name: Muchiri Mwangi
+  Github Link : https://github.com/MuchiriTheDev
+  Worked as : Project Lead
+
+Make sure to add your name and GitHub link to the file after pushing your changes if you haven't.
