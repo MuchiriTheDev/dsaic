@@ -8,6 +8,7 @@ import Registration from './Pages/Registration'
 import Authentication from './Pages/Authentication'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import Profile from './Pages/Profile'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/resources' element={<Resources/>}/>
           <Route path='/registration' element={<Registration/>}/>
           <Route path='/auth/:authId' element={<Authentication/>}/>
+          <Route path='/profile/:userId' element={<Profile/>}/>
         </Routes>
       <Footer/>
     </>
