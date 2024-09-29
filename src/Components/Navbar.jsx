@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center px-10 w-full font-medium'>
         <Link to={'/'} className='font-bold text-3xl text-center text-gray-600'>D.S.A.I.C</Link>
-        <ul className="hidden sm:flex gap-5 gap-x-10 text-sm text-gray-700">
+        <ul className="hidden md:flex gap-5 gap-x-10 text-sm text-gray-700">
             <NavLink to='/' className="flex flex-col items-center gap-1 text-sm font-medium">
                 <p>Home</p>
                 <hr className='w-3/4 border-none bg-green-500 h-[3px] hidden duration-200 transition-all'/>
@@ -42,7 +42,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer sm:hidden' alt="" />
+            <img onClick={()=>setVisible(true)} src={assets.menu_icon} className='w-5 cursor-pointer md:hidden' alt="" />
         </div>
         {/* Sidebar for small screen */}
         <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? "w-full": "w-0"}`}>

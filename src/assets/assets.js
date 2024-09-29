@@ -18,8 +18,16 @@ import about_img from './about_img.png'
 import cross_icon from './cross_icon.png'
 import dummy from './dummy.png'
 import hero from './illustration.png'
+import associate from './Associate.png'
+import grow from './Grow.png'
+import mentors from './Mentors.png'
+import reg from './Registration.png'
 
 export const assets = {
+    associate,
+    reg,
+    grow,
+    mentors,
     logo,
     hero,
     dummy,
