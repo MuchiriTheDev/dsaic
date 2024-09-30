@@ -23,5 +23,11 @@ a.active hr{
     }
 }
 ::-webkit-scrollbar{
-    display: none;
+    display: block;
+    width: 100%;
+    height: 3px;
+}
+.bg-rarely{
+    backdrop-filter: blur(4px);
+    background: linear-gradient(to bottom right, #07bd6873, #4099ff4f);
 }
