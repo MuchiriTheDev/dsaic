@@ -15,7 +15,7 @@ const Join = () => {
 
 
         <div className="w-full h-full p-5">
-            <h1 className='capitalize text-2xl md:text-4xl font-bold mb-4 text-gray-700 '>How to become one of us</h1>
+            <h1 className='uppercase text-xl md:text-2xl font-bold mb-4 text-gray-700 '>How to become one of us</h1>
             <p className='text-sm font-medium mb-3 text-gray-500'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae consequatur dicta ullam velit blanditiis illo quidem quasi natus? Similique, voluptate ea? Blanditiis atque nisi quod maiores repellendus eveniet saepe temporibus.
             </p>
