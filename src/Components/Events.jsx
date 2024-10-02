@@ -60,7 +60,7 @@ const Events = () => {
       </div>
 
       {/* Event List */}
-      <div className="relative w-full flex items-center h-full p-5 overflow-hidden overflow-x-hidden md:overflow-x-scroll">
+      <div className="relative w-full flex items-center h-full p-5 overflow-hidden smn  :overflow-x-hidden overflow-x-scroll">
         <div
           ref={eventContainerRef}
           className={`w-full flex  gap-5 transition-transform ease-in-out duration-300`}
@@ -81,7 +81,7 @@ const Events = () => {
         </div>
 
         {/* Navigation Arrows */}
-        <div className="hidden sm:flex absolute bottom-0 transform -translate-y-1/2 left-0 right-0 px-5 justify-between items-center">
+        <div className="hidden sm:flex absolute  bottom-0 transform -translate-y-1/2 left-0 right-0 z-10 top-[90%] px-5 justify-between items-center">
           <GoArrowLeft
             onClick={handlePrev}
             className={`text-3xl sm:text-4xl p-2 rounded-full bg-green-500 text-white cursor-pointer hover:bg-gray-600 font-extrabold transition-all duration-200 ${trans <= 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
