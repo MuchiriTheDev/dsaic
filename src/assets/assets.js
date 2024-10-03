@@ -31,6 +31,15 @@ import ev6 from './Event 6.jpg'
 import ev7 from './Event 7.jpg'
 import ev8 from './Event 8.jpg'
 import ev9 from './Event 9.jpg'
+import al1 from './al1.jpg'
+import al2 from './al2.jpg'
+import al3 from './al3.jpg'
+import al4 from './al4.jpg'
+import al5 from './al5.jpg'
+import al6 from './al6.jpg'
+import al7 from './al7.jpg'
+import main from "./Main One.jpg"
+
 
 
 export const assets = {
@@ -65,6 +74,14 @@ export const assets = {
     ev6,
     ev7,
     ev8,
-    ev9
+    ev9,
+   al1,
+   al2,
+   al3,
+   al4,
+   al5,
+   al6,
+   al7,
+   main
 }
 
