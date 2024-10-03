@@ -38,6 +38,7 @@ import al4 from './al4.jpg'
 import al5 from './al5.jpg'
 import al6 from './al6.jpg'
 import al7 from './al7.jpg'
+import main from "./Main One.jpg"
 
 
 
@@ -81,5 +82,6 @@ export const assets = {
    al5,
    al6,
    al7,
+   main
 }
 
