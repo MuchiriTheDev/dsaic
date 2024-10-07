@@ -11,7 +11,7 @@ const About = () => {
   const [ alms, setAlms ] = useState(3)
   const [ no , setNo ] = useState(4)
 
-  const {ev1, ev2, ev3, ev4, ev5, ev6, ev7, ev8, ev9, al1, al2, al3, al4, al5, al6, al7, main} = assets
+  const {ev1, ev2, ev3, ev4, ev5, ev6, ev7, ev8, ev9, al1, al2, al3, al4, al5, al6, al7, main, allThem} = assets
   const images = [ev1, ev2, ev3, ev4, ev5, ev6, ev7, ev8, ev9]
   const imageToShow = images.slice(0,no)
   const devs = [
@@ -26,10 +26,10 @@ const About = () => {
       link: 'https://muchiri-mwangi-com.vercel.app/',
       img: al2
     },{
-      name: "Rono",
+      name: "Victor",
       role: "Design (Lead)",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al3
+      link: '',
+      img: allThem
     },{
       name: "Brian",
       role: "Backend (Lead)",
@@ -140,7 +140,7 @@ const About = () => {
             Our story is a testament to what can be achieved when creative minds come together, combining strengths in diverse fields like data science, machine learning, web development, and beyond. We pride ourselves on embracing challenges, learning from failures, and celebrating our victories, no matter how small.
           </p>
           <div className="w-full h-20 flex items-center justify-start">
-            <Link to={'/registration'} className='bg-green-500 h-3/4 flex justify-center gap-3 items-center px-4 py-2 uppercase text-white font-medium'>
+            <Link to={'/registration'} className='bg-lightGreen h-3/4 flex justify-center gap-3 items-center px-4 py-2 uppercase text-white font-medium'>
               <p>Join Our Movement</p>
               <BsArrowRight className='text-xl font-extrabold'/>
             </Link>
@@ -171,7 +171,7 @@ const About = () => {
               <img className='w-full rounded-md h-[15em]' src={img} alt={`Gallery ${i}`} key={i}/>
           ))}
         </div>
-        <button onClick={() => setShowMore(!showMore)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 py-2 ${showMore ? "bg-gray-500" : "bg-green-500"} bg-green-500 rounded-sm text-white font-medium text-xl transition-all duration-150`}>
+        <button onClick={() => setShowMore(!showMore)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 py-2 ${showMore ? "bg-gray-500" : "bg-lightGreen"} bg-lightGreen rounded-sm text-white font-medium text-xl transition-all duration-150`}>
           {showMore ? (<>Show Less<MdOutlineKeyboardDoubleArrowUp /></>) : (<>Show More<MdOutlineKeyboardDoubleArrowDown /></>)}
         </button>
       </div>
@@ -195,12 +195,12 @@ const About = () => {
                           <span key={index} className='px-3 py-2 text-center bg-gray-600 text-white font-semibold shadow-md transition-all duration-200 hover:bg-green-400'>{tech}</span>
                       ))}
                     </div>
-                    <Link className='transition-all gap-2 duration-200 rounded-md hover:scale-105 hover:bg-green-700 my-10 shadow-md py-3 px-3 bg-green-500 text-white font-bold h-14 w-fit flex justify-center items-center' to={alm.link}><BsLink className='text-lg'/>View Porfolio</Link>
+                    <Link className='transition-all gap-2 duration-200 rounded-md hover:scale-105 hover:bg-green-700 my-10 shadow-md py-3 px-3 bg-lightGreen text-white font-bold h-14 w-fit flex justify-center items-center' to={alm.link}><BsLink className='text-lg'/>View Porfolio</Link>
                  </div>
               </div>
           ))}
         </div>
-        <button onClick={() => setMore(!more)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 py-2 ${more ? "bg-gray-500" : "bg-green-500"} bg-green-500 rounded-sm text-white font-medium text-xl transition-all duration-150`}>
+        <button onClick={() => setMore(!more)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 py-2 ${more ? "bg-gray-500" : "bg-lightGreen"} bg-lightGreen rounded-sm text-white font-medium text-xl transition-all duration-150`}>
           {more ? (<>Show Less <MdOutlineKeyboardDoubleArrowUp /></>) : (<>Show More <MdOutlineKeyboardDoubleArrowDown /></>)}
         </button>
       </div>
@@ -216,10 +216,10 @@ const About = () => {
       devs.map((dev, i)=>{
         return (
           <div className="w-full h-fit flex flex-col justify-center items-center shadow-md transition-all duration-200 rounded-md hover:bg-slate-100 p-4 hover:scale-105" key={i}>
-            <img src={dev.img} className='w-32 border-[3px] border-green-500 mb-3 rounded-full shadow-md h-32' alt="" />
+            <img src={dev.img} className='w-32 border-[3px] border-lightGreen mb-3 rounded-full shadow-md h-32' alt="" />
             <h1 className='mb-3 text-gray-800 font-extrabold text-xl'>{dev.name}</h1>
             <h2 className='mb-3 text-gray-600 font-semibold text-base'>{dev.role}</h2>
-            <Link className='transition-all gap-2 duration-200 rounded-md hover:scale-105 hover:bg-green-700 my-10 shadow-md py-3 px-3 bg-green-500 text-white font-bold h-14 w-fit flex justify-center items-center' to={dev.link}>
+            <Link className='transition-all gap-2 duration-200 rounded-md hover:scale-105 hover:bg-green-700 my-10 shadow-md py-3 px-3 bg-lightGreen text-white font-bold h-14 w-fit flex justify-center items-center' to={dev.link}>
                 <BsLink className='text-2xl'/>
                 <p>View Portfolio</p>
               </Link>

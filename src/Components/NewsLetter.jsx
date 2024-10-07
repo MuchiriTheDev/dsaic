@@ -7,9 +7,9 @@ const NewsLetter = () => {
             Subscribe to our newsletter
         </h1>
         <p className='font-semibold text-xl text-gray-500 captitalize mb-5 text-center'>Get latest update</p>
-        <form className="w-full sm:w-3/4 h-14 border-[3px] border-green-500 rounded-md overflow-hidden ">
+        <form className="w-full sm:w-3/4 h-14 border-[3px] border-lightGreen rounded-md overflow-hidden ">
             <input type="email"  placeholder='Email Address' required className='w-3/4 text-gray-500 h-full p-4 border-none outline-none' />
-            <input type="submit" className='w-1/4 h-full  bg-green-500 text-white transition-all duration-200 hover:scale-105 font-semibold text-xl border-none outline-none' value="Submit" />
+            <input type="submit" className='w-1/4 h-full  bg-lightGreen text-white transition-all duration-200 hover:scale-105 font-semibold text-xl border-none outline-none' value="Submit" />
         </form>
     </div>
   )

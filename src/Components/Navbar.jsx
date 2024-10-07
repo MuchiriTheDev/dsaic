@@ -11,30 +11,30 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-5 gap-x-10 text-sm text-gray-700">
             <NavLink to='/' className="flex flex-col items-center gap-1 text-sm font-medium">
                 <p>Home</p>
-                <hr className='w-3/4 border-none bg-green-500 h-[3px] hidden duration-200 transition-all'/>
+                <hr className='w-3/4 border-none bg-lightGreen h-[3px] hidden duration-200 transition-all'/>
             </NavLink>
             <NavLink to='/about' className="flex flex-col items-center gap-1 text-sm font-medium">
                 <p>About</p>
-                <hr className='w-3/4 border-none bg-green-500 h-[3px] hidden duration-200 transition-all'/>
+                <hr className='w-3/4 border-none bg-lightGreen h-[3px] hidden duration-200 transition-all'/>
             </NavLink>
             <NavLink to='/articles' className="flex flex-col items-center gap-1 text-sm font-medium">
                 <p>Articles</p>
-                <hr className='w-3/4 border-none bg-green-500 h-[3px] hidden duration-200 transition-all'/>
+                <hr className='w-3/4 border-none bg-lightGreen h-[3px] hidden duration-200 transition-all'/>
             </NavLink>
             <NavLink to='/hackathon' className="flex flex-col items-center gap-1 text-sm font-medium">
                 <p>Hackathon</p>
-                <hr className='w-3/4 border-none bg-green-500 h-[3px] hidden duration-200 transition-all'/>
+                <hr className='w-3/4 border-none bg-lightGreen h-[3px] hidden duration-200 transition-all'/>
             </NavLink>
             <NavLink to='/resources' className="flex flex-col items-center gap-1 text-sm font-medium">
                 <p>Resources</p>
-                <hr className='w-3/4 border-none bg-green-500 h-[3px] hidden duration-200 transition-all'/>
+                <hr className='w-3/4 border-none bg-lightGreen h-[3px] hidden duration-200 transition-all'/>
             </NavLink>
         </ul>
         <div className='flex items-center gap-6'>
-            <Link to={'/registration'} className='p-3 hidden sm:h-3/4 w-fit rounded-sm bg-green-500 text-white font-semibold text-xs sm:text-md sm:flex justify-center items-center gap-x-2'><p>Register Now</p> <GoArrowRight className='text-xl font-extrabold'/></Link>
+            <Link to={'/registration'} className='p-3 hidden sm:h-3/4 w-fit rounded-sm bg-lightGreen text-white font-semibold text-xs sm:text-md sm:flex justify-center items-center gap-x-2'><p>Register Now</p> <GoArrowRight className='text-xl font-extrabold'/></Link>
 
             <div className="group relative">
-                <Link className='p-10'  to={`/auth/login`}><img src={assets.profile_icon} className='w-10 rounded-full h-10 flex justify-center items-center cursor-pointer p-1 border-[3px] border-green-500' alt=""/></Link>
+                <Link className='p-10'  to={`/auth/login`}><img src={assets.profile_icon} className='w-10 rounded-full h-10 flex justify-center items-center cursor-pointer p-1 border-[3px] border-lightGreen' alt=""/></Link>
                 <div className="absolute hidden dropdown-menu top-16 right-0 group-hover:block pt-4">
                     <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-green-600 text-white rounded">
                         <Link to={`profile/19292`} className='cursor-pointer hover:text-black'>My Profile</Link>

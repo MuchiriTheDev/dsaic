@@ -22,19 +22,19 @@ const Join = () => {
             <h1 className='text-base font-bold uppercase mb-2 text-gray-700'>Steps In Registering</h1>
             <ol className='w-full mb-3'>
                 <li className='flex justify-start items-center gap-3'>
-                    <GoCheck className='text-green-600 text-2xl mr-3 p-3 h-full w-fit '/>
+                    <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
                     <p className='font-semibold text-base text-gray-800'>Step One</p>
                 </li>
                 <li className='flex justify-start items-center gap-3'>
-                    <GoCheck className='text-green-600 text-2xl mr-3 p-3 h-full w-fit '/>
+                    <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
                     <p className='font-semibold text-base text-gray-800'>Step Two</p>
                 </li>
                 <li className='flex justify-start items-center gap-3'>
-                    <GoCheck className='text-green-600 text-2xl mr-3 p-3 h-full w-fit '/>
+                    <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
                     <p className='font-semibold text-base text-gray-800'>Step Three</p>
                 </li>
                 <li className='flex justify-start items-center gap-3'>
-                    <GoCheck className='text-green-600 text-2xl mr-3 p-3 h-full w-fit '/>
+                    <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
                     <p className='font-semibold text-base text-gray-800'>Step Four</p>
                 </li>
             </ol>

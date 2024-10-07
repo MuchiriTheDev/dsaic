@@ -84,11 +84,11 @@ const Events = () => {
         <div className="hidden sm:flex absolute  bottom-0 transform -translate-y-1/2 left-0 right-0 z-10 top-[90%] px-5 justify-between items-center">
           <GoArrowLeft
             onClick={handlePrev}
-            className={`text-3xl sm:text-4xl p-2 rounded-full bg-green-500 text-white cursor-pointer hover:bg-gray-600 font-extrabold transition-all duration-200 ${trans <= 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`text-3xl sm:text-4xl p-2 rounded-full bg-lightGreen text-white cursor-pointer hover:bg-gray-600 font-extrabold transition-all duration-200 ${trans <= 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
           />
           <GoArrowRight
             onClick={handleNext}
-            className={`text-3xl sm:text-4xl p-2 rounded-full bg-green-500 text-white cursor-pointer hover:bg-gray-600 font-extrabold transition-all duration-200 ${trans >= maxScroll ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`text-3xl sm:text-4xl p-2 rounded-full bg-lightGreen text-white cursor-pointer hover:bg-gray-600 font-extrabold transition-all duration-200 ${trans >= maxScroll ? 'opacity-50 cursor-not-allowed' : ''}`}
           />
         </div>
       </div>
