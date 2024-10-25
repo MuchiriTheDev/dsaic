@@ -55,8 +55,8 @@ const Events = () => {
     <div className='w-full h-auto mb-20'>
       {/* Heading */}
       <div className="w-full flex justify-between items-center p-3 px-5 mb-5 md:px-10">
-        <h1 className='text-gray-800 font-bold text-base sm:text-3xl'>UPCOMING EVENTS</h1>
-        <p className='text-gray-800 font-semibold text-sm sm:text-2xl capitalize cursor-pointer hover:underline'>Explore more events</p>
+        <h1 className='text-gray-800 font-bold text-base sm:text-3xl'>Upcoming Events</h1>
+        <p className='text-gray-800 font-bold text-sm sm:text-2xl capitalize cursor-pointer hover:underline'>Explore more events</p>
       </div>
 
       {/* Event List */}

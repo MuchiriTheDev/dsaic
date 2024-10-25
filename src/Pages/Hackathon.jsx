@@ -7,6 +7,8 @@ import NewsLetter from '../Components/NewsLetter'
 import { IoSearchCircle } from 'react-icons/io5'
 import { BsExclamation } from 'react-icons/bs'
 import { GiThrustBend } from 'react-icons/gi'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer';
 
 const Hackathon = () => {
   const [items, setItems] = useState([])
@@ -48,6 +50,7 @@ const Hackathon = () => {
 
   return (
     <div className='w-full h-fit flex flex-col justify-center items-center'>
+      <Navbar/>
       {/* Hero hackathon page */}
       <div style={{
         background: `url(${assets.ev6})`,
@@ -58,7 +61,7 @@ const Hackathon = () => {
         className="w-full h-[90vh] bg-cover bg-center flex justify-center items-center">
         <div className="w-full h-full bg-transparent backdrop-blur-md flex justify-center flex-col items-center">
           <h1 className="font-extrabold text-3xl text-lightGreen uppercase text-center mb-4">Welcome to our hackathon Page</h1>
-          <p className='text-base sm:w-1/2 p-4 w-full text-white font-semibold text-center capitalize mb-4'>
+          <p className='text-sm sm:text-base sm:w-1/2 p-4 w-full text-white font-semibold text-center capitalize mb-4'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi facere dignissimos non exercitationem repellat iusto?
           </p>
           <Link className='flex items-center justify-center place-content-center h-12 w-fit rounded-sm text-white bg-lightGreen gap-3 font-bold text-xl py-4 px-6' to={'/'}>
@@ -69,7 +72,7 @@ const Hackathon = () => {
       </div>
 
       {/* Upcoming events */}
-      <div className="w-full h-fit bg-slate-100 py-10 px-3">
+      <div className="w-full h-fit py-10 px-0 sm:px-3">
         <div className='w-full h-fit p-4 flex justify-center items-center flex-col'>
           <h1 className='text-gray-800 font-extrabold text-xl md:text-3xl capitalize mb-3 '>UPCOMING HACKATHONS</h1>
           <p className='text-gray-700 font-bold text-sm md:text-base mb-3 capitalize'>Participate in building incredible technology</p>
@@ -129,6 +132,7 @@ const Hackathon = () => {
 
       {/* subscription */}
       <NewsLetter/>
+      <Footer/>
     </div>
   )
 }
