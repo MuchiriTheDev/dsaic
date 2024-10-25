@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 
 const Upcoming = ({img, name, desc, topics, link}) => {
   return (
-    <div className='w-full bg-lightGreen h-fit lg:h-[75vh] flex justify-center items-center flex-col lg:flex-row p-2'>
+    <div className='w-full bg-lightGreen h-fit lg:h-[75vh] flex justify-center items-center flex-col lg:flex-row p-0 sm:p-2'>
          {/* Left side */}
-         <div className="p-4 w-full lg:w-1/2 h-full flex justify-center items-center">
+         <div className="sm:p-4 p-2 pb-0 w-full lg:w-1/2 h-full flex justify-center items-center">
             <img src={img} alt="" className="rounded-lg h-full w-fit " />
          </div>
 
          {/* Right Side */}
-         <div className="p-4 lg:w-1/2 w-full h-full">
-            <div className="bg-gray-800 w-full h-full text-white p-5 flex justify-start md:justify-center items-center flex-col">
-                <h1 className='text-xl md:text-2xl font-extrabold text-start md:text-center capitalize mb-4'>{name}</h1>
+         <div className="sm:p-4 p-2  lg:w-1/2 w-full h-full">
+            <div className="bg-gray-800 w-full h-full text-white sm:p-4 p-3 flex justify-start md:justify-center items-center flex-col">
+                <h1 className='text-xl w-full md:text-2xl font-extrabold text-start md:text-center capitalize mb-4'>{name}</h1>
                 <p className='text-sm md:text-base font-medium mb-4 text-justify md:text-center '>
                     {desc}
                 </p>
@@ -21,7 +21,7 @@ const Upcoming = ({img, name, desc, topics, link}) => {
                     {
                         topics.map((item,i)=>{
                             return (
-                                <span className='w-full h-full py-1 px-3 flex justify-center items-center text-center text-gray-700 font-bold text-xs sm:text-sm bg-slate-100'>
+                                <span className='w-full h-10 py-2 px-3 flex justify-center sm:py-0 items-center text-center text-gray-700 font-bold text-xs sm:text-sm bg-slate-100'>
                                     {item}
                                 </span>
                             )

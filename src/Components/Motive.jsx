@@ -21,7 +21,7 @@ const Motive = () => {
     <div className='w-full p-2 bg-white h-fit py-10 mb-4'>
         {/* Heading */}
         <div className="w-full h-fit p-0 py-3 md:p-3 mb-5">
-            <h2 className='text-gray-800 font-bold text-3xl mb-3  uppercase w-full text-center'>Our Motives</h2>
+            <h2 className='text-gray-800 font-bold text-4xl mb-3  w-full text-center'>Our Motives</h2>
             <p className='text-gray-500 font-medium text-base text-center w-full'>
                 At dsiac we believe that they is not limit to  learning. We embrace peer learning & community support
             </p>
@@ -32,7 +32,7 @@ const Motive = () => {
                     return (
                         <div key={i} className="w-full flex items-center flex-col justify-center gap-3">
                             <img className='w-1/5 h-fit mb-2' src={motive.img} alt="" />
-                            <h1 className='font-semibold text-base uppercase mb-2'>{motive.title}</h1>
+                            <h1 className='font-bold text-base  mb-2'>{motive.title}</h1>
                             <p className='text-center font-medium text-sm text-gray-500'>
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita eveniet, error at tempora repudiandae libero vel velit.
                             </p>

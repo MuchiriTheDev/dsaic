@@ -11,6 +11,7 @@ import article2 from '../assets/article2.jpg';
 import doc1 from '../assets/doc1.jpg';
 import doc2 from '../assets/doc2.jpg';
 import doc3 from '../assets/doc3.jpg';
+import React from 'react'
 
 const Resources = () => {
 

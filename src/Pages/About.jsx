@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { BsArrowRight, BsLink } from 'react-icons/bs'
 import { MdOutlineKeyboardDoubleArrowDown, MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import NewsLetter from '../Components/NewsLetter';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const About = () => {
   const [ showMore , setShowMore ]= useState(false)
@@ -125,22 +127,23 @@ const About = () => {
   
   return (
     <div className='w-full h-fit flex flex-col justify-center items-center'>
+      <Navbar/>
 
       {/* Our Journey */}
-      <div className="flex flex-col md:flex-row justify-between w-full bg-slate-200 h-fit items-center gap-2 p-4">
+      <div className="flex flex-col md:flex-row justify-between w-full bg-slate-200 h-fit items-center gap-2 p-0 sm:p-4">
         <div className="w-full md:w-1/2 h-1/2 flex justify-center items-center">
-          <img className='w-full h-fit p-4 rounded-sm' src={main} alt="Our Journey" />
+          <img className='w-full h-fit p-0 sm:p-4 rounded-sm' src={main} alt="Our Journey" />
         </div>
         <div className="w-full md:w-1/2 h-full p-4">
-          <h1 className='text-gray-700 font-bold text-2xl md:text-4xl capitalize text-center md:text-justify mb-4'>Our Inspiring Journey</h1>
-          <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium'>
+          <h1 className='text-gray-700 font-bold lg:text-4xl md:text-2xl text-xl capitalize text-center md:text-justify mb-4'>Our Inspiring Journey</h1>
+          <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium sm:text-start text-center w-full text-pretty'>
             From a humble beginning to a thriving community, our journey has been driven by passion, innovation, and the pursuit of excellence. We started with a simple idea — to bring like-minded people together and create something remarkable. Through dedication and hard work, we’ve grown into a powerful force, shaping the future of tech.
           </p>
-          <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium '>
+          <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium sm:text-start text-center w-full text-pretty '>
             Our story is a testament to what can be achieved when creative minds come together, combining strengths in diverse fields like data science, machine learning, web development, and beyond. We pride ourselves on embracing challenges, learning from failures, and celebrating our victories, no matter how small.
           </p>
-          <div className="w-full h-20 flex items-center justify-start">
-            <Link to={'/registration'} className='bg-lightGreen h-3/4 flex justify-center gap-3 items-center px-4 py-2 uppercase text-white font-medium'>
+          <div className="w-full sm:h-20 h-14 flex items-center justify-center sm:justify-start">
+            <Link to={'/registration'} className='bg-lightGreen h-3/4 flex justify-center gap-3 items-center sm:px-4 sm:py-2 px-2 py-1 text-white font-bold'>
               <p>Join Our Movement</p>
               <BsArrowRight className='text-xl font-extrabold'/>
             </Link>
@@ -171,18 +174,18 @@ const About = () => {
               <img className='w-full rounded-md h-[15em]' src={img} alt={`Gallery ${i}`} key={i}/>
           ))}
         </div>
-        <button onClick={() => setShowMore(!showMore)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 py-2 ${showMore ? "bg-gray-500" : "bg-lightGreen"} bg-lightGreen rounded-sm text-white font-medium text-xl transition-all duration-150`}>
+        <button onClick={() => setShowMore(!showMore)} className={`flex justify-center items-center gap-2 my-5 w-fit h-14 px-4 py-2 ${showMore ? "bg-gray-500" : "bg-lightGreen"} bg-lightGreen rounded-sm text-white font-medium text-xl transition-all duration-150`}>
           {showMore ? (<>Show Less<MdOutlineKeyboardDoubleArrowUp /></>) : (<>Show More<MdOutlineKeyboardDoubleArrowDown /></>)}
         </button>
       </div>
 
       {/* Meet Our Alumni */}
-      <div className="w-full h-fit p-6 flex justify-center items-center flex-col bg-slate-200 py-10">
-        <h1 className="text-gray-800 font-bold text-2xl md:text-3xl uppercase text-center mb-5">Our Esteemed Alumni</h1>
+      <div className="w-full h-fit p-2 sm:p-6 flex justify-center items-center flex-col bg-slate-200 py-10">
+        <h1 className="text-gray-800 font-bold text-2xl md:text-4xl  text-center mb-5">Our Esteemed Alumni</h1>
         <p className='mb-5 text-gray-600 capitalize font-bold text-base'>The pillars who shaped our legacy</p>
         <div className="w-full">
           {alumniSliced.map((alm, i) => (
-              <div key={i} className="w-full h-fit md:h-[27em] flex md:flex-row flex-col justify-start items-center shadow-md">
+              <div key={i} className="w-full h-fit md:h-[27em] flex md:flex-row flex-col justify-start items-center shadow-sm">
                  <div className="md:w-1/2 w-full h-full p-4 flex justify-center items-center">
                     <img src={alm.img} className='w-full md:w-2/3 h-full rounded-lg' alt={alm.name} />
                  </div>
@@ -200,7 +203,7 @@ const About = () => {
               </div>
           ))}
         </div>
-        <button onClick={() => setMore(!more)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 py-2 ${more ? "bg-gray-500" : "bg-lightGreen"} bg-lightGreen rounded-sm text-white font-medium text-xl transition-all duration-150`}>
+        <button onClick={() => setMore(!more)} className={`flex justify-center items-center gap-2 w-fit h-14 px-4 my-5 py-2 ${more ? "bg-gray-500" : "bg-lightGreen"} bg-lightGreen rounded-sm text-white font-medium text-xl transition-all duration-150`}>
           {more ? (<>Show Less <MdOutlineKeyboardDoubleArrowUp /></>) : (<>Show More <MdOutlineKeyboardDoubleArrowDown /></>)}
         </button>
       </div>
@@ -211,7 +214,7 @@ const About = () => {
     The Developers
   </h1>
   <p className='text-gray-600 font-semibold text-base md:text-xl capitalize text-center mb-5'>Those who made this website to be what it looks like</p>
-  <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 w-full mt-5'>
+  <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 w-full mt-5'>
     {
       devs.map((dev, i)=>{
         return (
@@ -233,6 +236,7 @@ const About = () => {
 
       {/* Newsletter Section */}
       <NewsLetter />
+      <Footer/>
     </div>
   )
 }
