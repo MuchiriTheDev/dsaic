@@ -81,7 +81,7 @@ const Hackathon = () => {
           <div className="h-8 md:h-10 w-[15em] md:w-[20em] rounded-full text-xl font-medium border border-lightGreen flex justify-center items-center gap-2">
             <BiSearchAlt className='p-1 text-gray-800 w-1/4 flex justify-center items-center h-full' />
             <input onChange={e => filtering(e.target.value)} className='w-3/4 pr-4 pl-2 py-2 h-full bg-transparent border-none outline-none' type="search" placeholder='Search' />
-          </div>
+          </div>  
         </div>
         <div className="w-full h-fit flex justify-center items-center flex-col gap-4">
           {
