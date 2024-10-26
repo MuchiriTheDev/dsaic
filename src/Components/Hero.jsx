@@ -16,7 +16,7 @@ const Hero = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum incidunt temporibus modi alias amet corporis inventore tenetur!
                 </p>
 
-                <Link className="w-fit h-fit px-12 py-3 text-md text-white font-semibold bg-lightGreen flex justify-between items-center gap-x-2" to={'/auth/signing'}><p>Sign in</p> <GoArrowRight className='text-xl font-extrabold'/></Link>
+                <Link className="w-fit h-fit px-12 py-3 text-md text-white font-semibold bg-lightGreen flex justify-between items-center gap-x-2" to={'/auth/signup'}><p>Sign in</p> <GoArrowRight className='text-xl font-extrabold'/></Link>
             </div>
         </div>
 
