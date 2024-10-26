@@ -23,22 +23,22 @@ const Join = () => {
             <ol className='w-full mb-3'>
                 <li className='flex justify-start items-center gap-3'>
                     <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
-                    <p className='font-semibold text-base text-gray-800'>Step One</p>
+                    <p className='font-semibold text-base text-gray-800'>Sign up</p>
                 </li>
                 <li className='flex justify-start items-center gap-3'>
                     <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
-                    <p className='font-semibold text-base text-gray-800'>Step Two</p>
+                    <p className='font-semibold text-base text-gray-800'>Register</p>
                 </li>
                 <li className='flex justify-start items-center gap-3'>
                     <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
-                    <p className='font-semibold text-base text-gray-800'>Step Three</p>
+                    <p className='font-semibold text-base text-gray-800'>Contact Us</p>
                 </li>
                 <li className='flex justify-start items-center gap-3'>
                     <GoCheck className='text-lightGreen text-2xl mr-3 p-3 h-full w-fit '/>
-                    <p className='font-semibold text-base text-gray-800'>Step Four</p>
+                    <p className='font-semibold text-base text-gray-800'>Attend our sessions</p>
                 </li>
             </ol>
-            <div className="w-full flex justify-center sm:justify-end items-center h-fit p-6">
+            <div className="w-full flex justify-center sm:justify-end items-center h-fit p-6">  
                 <Link to={'/registration'} className='p-3 sm:h-3/4 w-full sm:w-fit rounded-sm bg-lightGreen text-white font-semibold text-xs sm:text-md flex justify-center items-center gap-x-2'><p>Register Now</p> <GoArrowRight className='text-xl font-extrabold'/></Link>
             </div>
         </div>
