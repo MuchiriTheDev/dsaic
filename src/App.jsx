@@ -8,7 +8,8 @@ import Registration from './Pages/Registration'
 import Authentication from './Pages/Authentication'
 import Profile from './Pages/Profile'
 import Contact from './Pages/Contact'
-
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
 const App = () => {
   return (
     <>
@@ -22,6 +23,8 @@ const App = () => {
           <Route path='/auth/:authId' element={<Authentication/>}/>
           <Route path='/profile/:userId' element={<Profile/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path="/auth/signup" element={<Signup />} />
+          <Route path="/auth/login" element={<Login />} />
         </Routes>
     </>
   )
