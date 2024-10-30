@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import { TiArrowLeftThick } from "react-icons/ti";
@@ -92,9 +92,9 @@ function SignupPage() {
 
         <p className="gap-2 mt-2 text-sm">
           Already have an account?
-          <a href="/auth/login" className="text-lightGreen ml-2 font-bold underline hover:underline">
+          <Link to="/auth/login" className="text-lightGreen ml-2 font-bold underline hover:underline">
             Log In
-          </a>
+          </Link>
         </p>
       </div>
     </div>

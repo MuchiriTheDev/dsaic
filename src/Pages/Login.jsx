@@ -1,6 +1,6 @@
 import React from "react";
 import { BsArrowLeft, BsArrowReturnLeft, BsBack } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { TiArrowLeftThick } from "react-icons/ti";
 import { MdArrowForwardIos, MdAttachEmail } from "react-icons/md";
 import { FaCircleUser, FaFacebook } from "react-icons/fa6";
@@ -83,9 +83,9 @@ function LoginPage() {
 
         <p className="mt-4 gap-2 text-sm">
           Do <strong>not</strong> have an account?
-          <a href="/auth/signup" className="text-lightGreen ml-2 font-bold underline hover:underline">
+          <Link to="/auth/signup" className="text-lightGreen ml-2 font-bold underline hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>
