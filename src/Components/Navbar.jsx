@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center px-10 w-full font-medium'>
-        <Link to={'/'} className='lg:w-1/4 font-bold text-3xl text-center text-gray-600'>D.S.A.I.C</Link>
+        <Link to={'/'} className='lg:w-1/4 font-bold text-3xl text-start text-gray-600'>D.S.A.I.C</Link>
         <ul className="hidden lg:w-1/2 md:flex justify-center gap-2 md:gap-3 lg:gap-5 lg:gap-x-10 text-sm text-gray-700">
             <NavLink to='/' className="flex flex-col items-center gap-1 text-xs lg:text-sm font-medium">
                 <p>Home</p>
@@ -30,15 +30,15 @@ const Navbar = () => {
                 <hr className='w-3/4 border-none bg-lightGreen h-[3px] hidden duration-200 transition-all'/>
             </NavLink>
         </ul>
-        <div className='lg:w-1/4 flex items-center gap-6'>
+        <div className='lg:w-1/4 flex justify-end items-center gap-6'>
             <Link to={'/registration'} className='p-3 hidden sm:h-3/4 w-fit rounded-sm bg-lightGreen text-white font-semibold text-xs sm:flex justify-center items-center gap-x-2'><p>Register Now</p> <GoArrowRight className='text-xl font-extrabold'/></Link>
 
             <div className="group relative">
-                <Link className='p-10'  to={`/auth/login`}><img src={assets.profile_icon} className='w-10 rounded-full h-10 flex justify-center items-center cursor-pointer p-1 border-[3px] border-lightGreen' alt=""/></Link>
+                <Link className='p-10'><img src={assets.profile_icon} className='w-10 rounded-full h-10 flex justify-center items-center cursor-pointer p-1 border-[3px] border-lightGreen' alt=""/></Link>
                 <div className="absolute hidden dropdown-menu bg-textGreen z-10 top-16 right-0 group-hover:block pt-4">
                     <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-green-600 text-white rounded">
-                        <Link to={`profile/19292`} className='cursor-pointer hover:text-black'>My Profile</Link>
-                        <Link className='cursor-pointer hover:text-black'>Sign in</Link>
+                        <Link to={`/profile/19292`} className='cursor-pointer hover:text-black'>My Profile</Link>
+                        <Link to={'/auth/login'} className='cursor-pointer hover:text-black'>Sign in</Link>
                     </div>
                 </div>
             </div>

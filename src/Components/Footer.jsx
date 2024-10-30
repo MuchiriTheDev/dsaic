@@ -11,20 +11,20 @@ const Footer = () => {
 
         {/* The first block of the footer */}
         <div className="w-full h-fit md:mb-0 mb-8 flex justify-center items-center flex-col">
-          <h1 className='font-bold text-base md:text-xl mb-7 w-full'>D.S.A.I.C</h1>
+          <h1 className='font-semibold text-center text-base md:text-xl mb-7 w-full'>Data Science And Artificial Intelligence Club</h1>
 
-          <div className="pl-3 flex justify-start mb-4 text-sm items-center gap-3 w-full h-fit text-gray-600 font-bold">
+          <div className="pl-3 flex justify-center mb-4 text-sm  items-center gap-3 w-full h-fit text-gray-600 font-bold">
             <FaPhoneAlt />
             <a className='uppercase' href="tel:+254101010101">Call us</a>
           </div>
 
-          <div className="pl-3 flex justify-start mb-4 text-sm items-center gap-3 w-full h-fit text-gray-600 font-bold ">
+          <div className="pl-3 flex justify-center mb-4 text-sm items-center gap-3 w-full h-fit text-gray-600 font-bold ">
             <IoIosMail/>
             <a className='uppercase' href="mailto:dsaic@gmail.com">dsaic@gmail.com</a>
           </div>
 
           <div className="my-4 w-full">
-            <ul className="flex justify-start items-center gap-4 w-full h-fit">
+            <ul className="flex justify-center items-center gap-4 w-full h-fit">
               <li>
                 <a
                   href=""
@@ -103,39 +103,39 @@ const Footer = () => {
 
         {/* The second block of the footer  */}
         <div className="w-full h-fit mb-8 sm:mb-0">
-            <h6 className="text-gray-800 text-base md:text-xl uppercase font-bold mb-4">Club</h6>
+            <h6 className="text-gray-800 text-base text-center md:text-xl font-semibold mb-4">Club</h6>
             <ul className="text-sm pl-4">
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Home
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/about"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   About us
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/contact"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Contact
                 </a>
               </li>
 
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/privacy-policy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Privacy Policy
                 </a>
@@ -145,39 +145,39 @@ const Footer = () => {
 
           {/* The third block of the footer */}
           <div className="w-full mb-8 lg:mb-0">
-            <h6 className="text-gray-800 text-base md:text-xl uppercase font-bold mb-4">Support</h6>
+            <h6 className="text-gray-800 text-base md:text-xl text-center  font-semibold mb-4">Support</h6>
             <ul className="text-sm pl-4">
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Help Center
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/registration"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Registration
                 </a>
               </li>
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/contact"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Dev Team
                 </a>
               </li>
 
-              <li className="mb-2">
+              <li className="mb-2 w-full flex justify-center items-center">
                 <a
                   href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-medium mb-2 text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                  className="text-base font-medium mb-2 text-center w-full text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Queries
                 </a>
@@ -187,7 +187,7 @@ const Footer = () => {
 
           {/* The last section on the footer */}
           <div className="w-full flex justify-center items-center flex-col mb-8 lg:mb-0">
-            <h1 className='text-gray-800 uppercase w-full text-base md:text-xl font-bold mb-5'>Subscribe to our content</h1>
+            <h1 className='text-gray-800 w-full text-base md:text-xl font-semibold mb-5'>Subscribe to our content</h1>
             <form className="border-2 rounded-lg bg-slate-200 border-gray-700 text-sm font-medium flex justify-center items-center w-full h-fit">
               <input className='rounded-s-lg w-3/4 bg-transparent outline-none border-none h-fit p-3' required placeholder='Email address' type="email" name="email-subscription" id="" />
               <button className='w-1/4 flex justify-center items-center h-full bg-gray-800 text-white'type='submit'><BsFillSendFill className='text-xl transition-all duration-200 hover:scale-110 hover:text-green-500' /></button>
@@ -196,8 +196,9 @@ const Footer = () => {
 
       </div>
 
-      <div className="p-4 border-t-2">
-        <p className='font-semibold text-sm md:text-base text-center uppercase'>2024 All rights reserved &copy;D.S.A.I.C -- data science and artificial intelligence club</p>
+      <div className="p-4 border-t-2 flex justify-center flex-col items-center">
+        <p className='font-medium text-base text-center '>2024 All rights reserved by :</p>
+        <p className='font-medium text-sm md:text-base'>&copy; Data Science And Artificial intelligence Club (D.S.A.I.C)</p>
       </div>
     </div>
   )
