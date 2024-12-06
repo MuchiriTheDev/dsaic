@@ -25,7 +25,7 @@ const Motive = () => {
             <div className="w-full h-fit p-0 py-3 md:p-3 mb-5">
                 <h2 className='text-gray-800 font-bold text-4xl mb-3  w-full text-center'>Our Motives</h2>
                 <p className='text-gray-500 font-medium text-sm text-center w-full'>
-                    At <span className='font-bold text-gray-800'>DSAIC</span>, we believe in limitless learning. We embrace peer learning, mentorship, and community-driven growth to foster innovation and excellence.
+                    At <span className='font-bold text-xs md:text-sm text-gray-800'>DSAIC</span>, we believe in limitless learning. We embrace peer learning, mentorship, and community-driven growth to foster innovation and excellence.
                 </p>
             </div>
             <div className="p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-x-6">
@@ -35,7 +35,7 @@ const Motive = () => {
                             <div key={i} className="w-full flex items-center flex-col justify-center gap-3">
                                 <img className='w-1/5 h-fit mb-2' src={motive.img} alt={motive.title} />
                                 <h1 className='font-bold text-lg  mb-2'>{motive.title}</h1>
-                                <p className='text-center font-medium text-sm text-gray-500'>
+                                <p className='text-center font-medium text-xs md:text-sm text-gray-500'>
                                     {motive.desc}
                                 </p>
                             </div>

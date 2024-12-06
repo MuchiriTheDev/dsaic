@@ -58,11 +58,11 @@ const Hackathon = () => {
         className="w-full h-[90vh] bg-cover bg-center flex justify-center items-center">
         <div className="w-full h-full bg-transparent backdrop-blur-lg flex flex-col justify-center items-center">
           <div className='w-full h-fit flex flex-col items-center'>
-            <h1 className="font-extrabold text-4xl text-lightGreen drop-shadow-lg uppercase text-center mb-6">Welcome to Our Hackathon Page</h1>
-            <p className='text-base sm:text-lg w-3/4 sm:w-1/2 p-4 text-white font-semibold text-center mb-6'>
+            <h1 className="font-bold text-3xl md:text-4xl text-lightGreen drop-shadow-lg uppercase text-center mb-6">Welcome to Our Hackathon Page</h1>
+            <p className='text-base sm:text-lg w-3/4 sm:w-1/2 p-1 md:p-4 text-white font-semibold text-center mb-6'>
               Discover the ultimate platform for creativity and innovation. Join us for a day of hacking, networking, and tech excellence.
             </p>
-            <Link className='flex items-center justify-center place-content-center h-14 w-fit rounded shadow-lg text-white bg-lightGreen gap-3 font-bold text-2xl py-4 px-8' to={'/'}>
+            <Link className='flex items-center justify-center place-content-center h-14 w-fit rounded shadow-lg text-white bg-lightGreen gap-3 font-bold text-xl py-4 px-6' to={'/'}>
               <p>Participate</p>
               <BiArrowFromLeft className='h-full text-4xl font-extrabold flex items-center' />
             </Link>

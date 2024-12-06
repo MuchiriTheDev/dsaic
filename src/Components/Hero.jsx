@@ -11,8 +11,8 @@ const Hero = () => {
         <div className="w-full h-full flex justify-center items-center">
             <div className="w-full h-fit flex flex-col justify-center sm:justify-start">
                 <h1 className='text-xl md:text-3xl uppercase font-semibold mb-1 text-gray-800'>Transform Technology with Us</h1>
-                <h1 className='text-sm md:text-lg font-semibold mb-3 text-gray-800'>at DSAIC in <span className='font-bold uppercase text-lightGreen'>Dedan Kimathi</span></h1>
-                <p className='text-justify text-sm font-medium mb-5'>
+                <h1 className='text-base md:text-2xl font-semibold mb-3 text-gray-800'>at DSAIC in <span className='font-bold uppercase text-lightGreen'>Dedan Kimathi</span></h1>
+                <p className='text-justify text-xs md:text-sm font-medium mb-5'>
                     Join a community driven by innovation and excellence. Dive into exciting opportunities, sharpen your skills, and lead the future of technology today.
                 </p>
 

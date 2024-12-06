@@ -35,7 +35,7 @@ const Navbar = () => {
 
             <div className="group relative">
                 <Link className='p-10'><img src={assets.profile_icon} className='w-10 rounded-full h-10 flex justify-center items-center cursor-pointer p-1 border-[3px] border-lightGreen' alt=""/></Link>
-                <div className="absolute hidden dropdown-menu bg-textGreen z-10 top-16 right-0 group-hover:block pt-4">
+                <div className="absolute hidden dropdown-menu bg-textGreen z-50 top-16 right-0 group-hover:block pt-4">
                     <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-green-600 text-white rounded">
                         <Link to={`/profile/19292`} className='cursor-pointer hover:text-black'>My Profile</Link>
                         <Link to={'/auth/login'} className='cursor-pointer hover:text-black'>Sign in</Link>

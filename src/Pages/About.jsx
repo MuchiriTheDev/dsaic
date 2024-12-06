@@ -113,7 +113,7 @@ const About = () => {
           <h1 className='text-gray-700 font-bold text-2xl md:text-4xl capitalize text-center  mb-5'>
             Our Purpose & Values
           </h1>
-          <p className='mb-4 text-gray-800 text-base font-medium'>
+          <p className='mb-4 text-gray-800 text-base text-center font-medium'>
             We exist to empower and inspire the next generation of innovators. Our mission is to create a platform where skills are sharpened, ideas are nurtured, and leaders are born. We believe in building sustainable solutions that not only meet today’s challenges but also shape the future. Collaboration, creativity, and integrity are at the heart of everything we do.
           </p>
         </div>

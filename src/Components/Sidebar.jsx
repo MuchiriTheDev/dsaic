@@ -9,7 +9,7 @@ const Sidebar = ({setPage}) => {
     const [ active , setActive ] = useState(false);
     const nav = useNavigate()
   return (
-    <div className={`h-screen ${active ?'md:w-1/5 fixed top0 left-0 w-full h-full z-20': 'md:w-20 w-16'} flex flex-col justify-between items-center transition-all duration-150 p-3 text-white bg-gray-700`}>
+    <div className={`h-screen ${active ?'md:w-1/5 fixed top0 left-0 w-full h-full z-50': 'md:w-20 w-16'} flex flex-col justify-between items-center transition-all duration-150 p-3 text-white bg-gray-700`}>
 
         <div className="w-full h-fit flex justify-end p-2 mb-10 cursor-pointer">
             <IoIosArrowForward onClick={()=> setActive(!active)} size={35} className={`text-xl ${ active ? 'rotate-180': null}`} />

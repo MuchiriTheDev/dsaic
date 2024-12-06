@@ -23,7 +23,7 @@ const UpdatePage = () => {
         
         <div className="flex md:flex-row flex-col w-full h-full p-2  justify-center items-center gap-2">
             {/* Profile Picture Upload */}
-            <div className="flex flex-col md:w-1/2 w-full min-h-44 h-screen   items-center p-5">
+            <div className="flex flex-col md:w-1/2  w-full min-h-44 h-screen  justify-center  items-center p-5">
                 <label htmlFor="profilePicture" className="cursor-pointer w-full h-full ">
                     <input
                     type="file"
@@ -32,10 +32,10 @@ const UpdatePage = () => {
                     onChange={handleProfilePictureChange}
                     className="hidden"
                     />
-                    <div className=" w-full h-full  flex justify-center items-center mb-2">
-                        <div className="relative w-1/2 h-1/2 ">
+                    <div className="w-full h-full  flex justify-center items-center mb-2">
+                        <div className="relative w-3/4 md:h-1/2  h-fit">
                             <img
-                                src={profilePicture || "https://via.placeholder.com/150"}
+                                src={profilePicture || "https://static.vecteezy.com/system/resources/previews/036/594/092/non_2x/man-empty-avatar-photo-placeholder-for-social-networks-resumes-forums-and-dating-sites-male-and-female-no-photo-images-for-unfilled-user-profile-free-vector.jpg"}
                                 alt="Profile Preview"
                                 className="w-full h-full object-cover overflow-hidden rounded-full border-4 border-lightGreen"
                             />
