@@ -15,27 +15,24 @@ const Hackathon = () => {
 
   const upcomingHackathon = [
     {
-      name: "The Incredible Hack",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis illum animi modi sapiente, tenetur officiis tempora voluptate! Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc aliquam venenatis erat, quis rutrum enim semper ac. Quisque nec ante efficitur",
-      topics: ['Web3', "Web Development", 'Blockchain Technology', 'Artificial Intelligence'],
-      link: 'doijojoojis',
-      img: assets.ev4,
-    },
-    {
-      name: "Buildathon",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis illum animi modi sapiente, tenetur officiis tempora voluptate! Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc aliquam venenatis erat, quis rutrum enim semper ac. Quisque nec ante efficitur",
-      topics: ['Web3', "Web Development", 'Blockchain Technology', 'Artificial Intelligence', 'Data Science', 'Machine Learning', 'Cloud Computing'],
-      link: 'doijojoojis',
-      img: assets.ev7,
-    },
-    {
-      name: "Incoming Culture",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis illum animi modi sapiente, tenetur officiis tempora voluptate! Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc aliquam venenatis erat, quis rutrum enim semper ac. Quisque nec ante efficitur",
-      topics: ['Web3', "Web Development", 'Blockchain Technology', 'Artificial Intelligence'],
-      link: 'doijojoojis',
-      img: assets.ev5,
-    },
+      name: "DSAIC HACKATHON 2024",
+      desc: "Get ready for the ultimate hackathon experience! Join us on December 7th, 2024, at the Nelion Dome for a day of creativity, data, and Artificial Intelligence magic. Whether you're a coding wizard, a data guru, or an idea powerhouse, this is your chance to build machine learning models, network with tech enthusiasts, and win exciting prizes! Hosted by DSAIC in partnership with DSAIL and DeHUB.",
+      topics: ['Data Science', "Machine Learning", 'Artificial Intelligence'],
+      link: 'https://forms.gle/Ld1rZf7emc4K3phJ6',
+      img: assets.hack,
+    }
   ]
+
+  const outDated = [
+    {
+      name: "Umoja Hackathon",
+      desc: "On December 7th, 2024, at the Nelion Dome, participants built machine learning models, networked with tech enthusiasts, and won exciting prizes. Hosted by DSAIC in partnership with DSAIL and DeHUB.",
+      topics: ['Data Science', "Machine Learning", 'Artificial Intelligence'],
+      link: 'https://forms.gle/Ld1rZf7emc4K3phJ6',
+      img: assets.umoja,
+    }
+  ]
+  
 
   const filtering = (evt) => {
     const filteredItems = upcomingHackathon.filter(item =>
@@ -53,23 +50,26 @@ const Hackathon = () => {
       <Navbar/>
       {/* Hero hackathon page */}
       <div style={{
-        background: `url(${assets.ev6})`,
+        background: `url(${assets.heroHack})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment : 'fixed',
+        backgroundAttachment: 'fixed',
       }}
         className="w-full h-[90vh] bg-cover bg-center flex justify-center items-center">
-        <div className="w-full h-full bg-transparent backdrop-blur-md flex justify-center flex-col items-center">
-          <h1 className="font-extrabold text-3xl text-lightGreen uppercase text-center mb-4">Welcome to our hackathon Page</h1>
-          <p className='text-sm sm:text-base sm:w-1/2 p-4 w-full text-white font-semibold text-center capitalize mb-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi facere dignissimos non exercitationem repellat iusto?
-          </p>
-          <Link className='flex items-center justify-center place-content-center h-12 w-fit rounded-sm text-white bg-lightGreen gap-3 font-bold text-xl py-4 px-6' to={'/'}>
-            <p>Participate</p>
-            <BiArrowFromLeft className='h-full text-4xl font-extrabold flex items-center' />
-          </Link>
+        <div className="w-full h-full bg-transparent backdrop-blur-lg flex flex-col justify-center items-center">
+          <div className='w-full h-fit flex flex-col items-center'>
+            <h1 className="font-extrabold text-4xl text-lightGreen drop-shadow-lg uppercase text-center mb-6">Welcome to Our Hackathon Page</h1>
+            <p className='text-base sm:text-lg w-3/4 sm:w-1/2 p-4 text-white font-semibold text-center mb-6'>
+              Discover the ultimate platform for creativity and innovation. Join us for a day of hacking, networking, and tech excellence.
+            </p>
+            <Link className='flex items-center justify-center place-content-center h-14 w-fit rounded shadow-lg text-white bg-lightGreen gap-3 font-bold text-2xl py-4 px-8' to={'/'}>
+              <p>Participate</p>
+              <BiArrowFromLeft className='h-full text-4xl font-extrabold flex items-center' />
+            </Link>
+          </div>
         </div>
       </div>
+
 
       {/* Upcoming events */}
       <div className="w-full h-fit py-10 px-0 sm:px-3">
@@ -110,7 +110,7 @@ const Hackathon = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {
-            upcomingHackathon.map((hack, i) => {
+            outDated.map((hack, i) => {
               return (
                 <div className="w-full h-full flex justify-center items-center flex-col">
                   <img src={hack.img} className='w-full h-1/2 mb-3' alt="" />
@@ -131,7 +131,6 @@ const Hackathon = () => {
 
 
       {/* subscription */}
-      <NewsLetter/>
       <Footer/>
     </div>
   )

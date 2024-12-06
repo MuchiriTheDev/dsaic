@@ -20,93 +20,49 @@ const About = () => {
     {
       name: "Muchiri",
       role: "Product Manager",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
+      link: 'https://muchiri-the-dev.vercel.app/',
       img: al1
     },{
       name: "Michael",
       role: "Frontend (Lead)",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
+      link: 'https://muchiri-the-dev.vercel.app/',
       img: al2
     },{
       name: "Victor",
       role: "Design (Lead)",
       link: '',
       img: allThem
-    },{
-      name: "Brian",
-      role: "Backend (Lead)",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al4
-    },{
-      name: "Peter",
-      role: "Frontend",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al5
-    },{
-      name: "Karani",
-      role: "Design",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al6
-    },{
-      name: "Emma",
-      role: "Backend",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al7
     },
   ]
 
-  const alumni =[
+  const alumni = [
     {
       name: "Muchiri",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["R","Python","Ruby"],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
+      role: "AI Researcher and Data Analyst",
+      tech: ["R", "Python", "Ruby"],
+      exp: "I am skilled at uncovering insights from complex datasets and building predictive models to solve real-world challenges. I am passionate about leveraging data to make impactful decisions.",
+      link: 'https://muchiri-the-dev.vercel.app/',
       img: al1
-    },{
+    },
+    {
       name: "Michael",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["JavaScript","Java", "React Native", "PostGreSQL", "MongoDB","R","Python","Ruby"],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
+      role: "Full-Stack Developer and Machine Learning Specialist",
+      tech: ["JavaScript", "Java", "React Native", "PostGreSQL", "MongoDB", "R", "Python", "Ruby"],
+      exp: "I have extensive experience in full-stack development, specializing in creating efficient, scalable applications powered by data science and machine learning principles.",
+      link: 'https://muchiri-the-dev.vercel.app/',
       img: al2
-    },{
+    },
+    {
       name: "Rono",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["R","Python","Flutter", "Kotlin"],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
+      role: "Mobile Developer and Data Scientist",
+      tech: ["R", "Python", "Flutter", "Kotlin"],
+      exp: "I enjoy developing mobile and web applications while integrating data science solutions to optimize user experiences and performance.",
+      link: 'https://muchiri-the-dev.vercel.app/',
       img: al3
-    },{
-      name: "Brian",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["Java", "R" ,"Python","JavaScript"],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al4
-    },{
-      name: "Peter",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["JavaScript","Python","Ruby"],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al5
-    },{
-      name: "Karani",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["R","Python",'JavaScript'],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al6
-    },{
-      name: "Emma",
-      role: "Data Scientist And Machine Learning Engineer",
-      tech: ["R","Python","Ruby"],
-      exp: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, quis. Nam molestias architecto officiis! Ipsam porro, ducimus explicabo distinctio repellat velit magni aliquid quaerat ex? Unde maxime dignissimos sit similique.",
-      link: 'https://muchiri-mwangi-com.vercel.app/',
-      img: al7
     },
   ]
+  
+  
   const alumniSliced = alumni.slice(0,alms)
 
   useEffect(()=>{
@@ -167,7 +123,7 @@ const About = () => {
       <div className="w-full h-fit p-6 flex justify-center items-center flex-col">
         <div className="w-full h-fit p-4">
           <h1 className='text-gray-700 font-bold text-2xl md:text-4xl capitalize text-center  mb-5'>Captured Moments</h1>
-          <p className='text-gray-600 font-semibold text-base md:text-xl capitalize text-center mb-5'>Snapshots of our remarkable journey</p>
+          <p className='text-gray-600 font-semibold text-base md:text-base capitalize text-center mb-5'>Snapshots of our remarkable journey</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4 transition-all duration-150">
           {imageToShow.map((img, i) => (
@@ -235,7 +191,6 @@ const About = () => {
 
 
       {/* Newsletter Section */}
-      <NewsLetter />
       <Footer/>
     </div>
   )
@@ -245,3 +200,37 @@ export default About
 
 
 
+
+// {/* Our Journey */}
+// <div className="flex flex-col md:flex-row justify-between w-full bg-slate-200 h-fit items-center gap-2 p-0 sm:p-4">
+// <div className="w-full md:w-1/2 h-1/2 flex justify-center items-center">
+//   <img className='w-full h-fit p-0 sm:p-4 rounded-sm' src={main} alt="Our Journey" />
+// </div>
+// <div className="w-full md:w-1/2 h-full p-4">
+//   <h1 className='text-gray-700 font-bold lg:text-4xl md:text-2xl text-xl capitalize text-center md:text-justify mb-4'>Our Inspiring Journey</h1>
+//   <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium sm:text-start text-center w-full text-pretty'>
+//     From a humble beginning to a thriving community, our journey has been driven by passion, innovation, and the pursuit of excellence. We started with a simple idea — to bring like-minded people together and create something remarkable. Through dedication and hard work, we’ve grown into a powerful force, shaping the future of tech.
+//   </p>
+//   <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium sm:text-start text-center w-full text-pretty '>
+//     Our story is a testament to what can be achieved when creative minds come together, combining strengths in diverse fields like data science, machine learning, web development, and beyond. We pride ourselves on embracing challenges, learning from failures, and celebrating our victories, no matter how small.
+//   </p>
+//   <div className="w-full sm:h-20 h-14 flex items-center justify-center sm:justify-start">
+//     <Link to={'/registration'} className='bg-lightGreen h-3/4 flex justify-center gap-3 items-center sm:px-4 sm:py-2 px-2 py-1 text-white font-bold'>
+//       <p>Join Our Movement</p>
+//       <BsArrowRight className='text-xl font-extrabold'/>
+//     </Link>
+//   </div>
+// </div>
+// </div>
+
+//  {/* Our Purpose */}
+//  <div className="w-full h-fit p-4 flex justify-center items-center">
+//  <div className="md:w-3/4 w-full h-fit p-4">
+//    <h1 className='text-gray-700 font-bold text-2xl md:text-4xl capitalize text-center  mb-5'>
+//      Our Purpose & Values
+//    </h1>
+//    <p className='mb-4 text-gray-800 text-base font-medium'>
+//      We exist to empower and inspire the next generation of innovators. Our mission is to create a platform where skills are sharpened, ideas are nurtured, and leaders are born. We believe in building sustainable solutions that not only meet today’s challenges but also shape the future. Collaboration, creativity, and integrity are at the heart of everything we do.
+//    </p>
+//  </div>
+// </div>

@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="w-auto h-full">
                 <h1 className='text-gray-800 font-bold text-base mb-2'><a href="tel:+254101010101">Call To Action</a></h1>
                 <p className='text-sm text-gray-600 font-medium '>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe enim voluptate delectus.
+                  Click here to directly call us or reach out to <span className='font-bold'>0101010101</span>.
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ const Contact = () => {
               <div className="w-auto h-full">
                 <h1 className='text-gray-800 font-bold text-base mb-2'><a href="mailto:dsaic@gmail.com">dsaic@gmail.com</a></h1>
                 <p className='text-sm text-gray-600 font-medium '>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe enim voluptate delectus.
+                Click here to directly email us or you can write an email to <span className='font-bold'>dsaic@gmail.com</span>.
                 </p>
               </div>
             </div>
@@ -98,10 +98,14 @@ const Contact = () => {
               </div>
               <div className="w-auto h-full">
                 <h1 className='text-gray-800 font-bold text-base mb-2'>
-                  <a href="https://goo.gl/maps/xR7AJsd8iFz7RNrG7" target="_blank" rel="noopener noreferrer">Kenya, Nyeri, Dedan Kimathi University</a>
+                  <a 
+                    className="text-dark text-sm"
+                    href="https://www.google.com/maps/place/Dedan+Kimathi+University+of+Technology,+Nyeri/"
+                    target="_blank"
+                    rel="noopener noreferrer">Kenya, Nyeri, Dedan Kimathi University</a>
                 </h1>
                 <p className='text-sm text-gray-600 font-medium '>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe enim voluptate delectus.
+                  Click here to open google maps and see where we are located.
                 </p>
               </div>
             </div>
@@ -145,7 +149,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <NewsLetter />
       <Footer />
     </div>
   );

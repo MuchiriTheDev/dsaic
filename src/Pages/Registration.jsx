@@ -2,7 +2,7 @@ import React from "react";
 import { IoArrowBack } from "react-icons/io5";
 import { FaRegUser, FaPhoneSquare } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { TiArrowLeftThick } from "react-icons/ti";
 
 const Registration = () => {
@@ -103,9 +103,9 @@ const Registration = () => {
 
         <p className="mt-4 text-sm">
           Already have an account?
-          <Link to="/auth/login" className="text-lightGreen ml-2 font-bold underline">
+          <a href="/auth/login" className="text-lightGreen ml-2 font-bold underline">
             Log In
-          </Link>
+          </a>
         </p>
       </div>
     </div>

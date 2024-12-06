@@ -40,9 +40,14 @@ import al6 from './al6.jpg'
 import al7 from './al7.jpg'
 import main from "./Main One.jpg"
 import allThem from './All them.jpg'
+import hack from './hack.jpg'
+import umoja from './Umoja.jpg'
+import heroHack from './hero-hack.jpg'
 
 
 export const assets = {
+    hack,
+    umoja,
     associate,
     reg,
     grow,
@@ -72,7 +77,7 @@ export const assets = {
     ev4,
     ev5,
     ev6,
-    ev7,
+    ev7,heroHack,
     ev8,
     ev9,
    al1,

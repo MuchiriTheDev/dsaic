@@ -16,7 +16,6 @@ const Home = () => {
       <Hero/>
       <Motive/>
       <Join/>
-      <Events/>
       <Footer/>
     </div>
   )

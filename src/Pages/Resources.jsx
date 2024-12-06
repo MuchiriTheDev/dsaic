@@ -286,7 +286,6 @@ const Resources = () => {
                 );
             })}
       </div>
-      <NewsLetter/>
       <Footer/>   
     </div>
       
