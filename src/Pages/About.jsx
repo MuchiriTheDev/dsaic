@@ -13,54 +13,98 @@ const About = () => {
   const [ alms, setAlms ] = useState(3)
   const [ no , setNo ] = useState(4)
 
-  const {ev1, ev2, ev3, ev4, ev5, ev6, ev7, ev8, ev9, al1, al2, al3, al4, al5, al6, al7, main, allThem} = assets
+  const {ev1, ev2, ev3, ev4, ev5, ev6, ev7, ev8, ev9, main} = assets
   const images = [ev1, ev2, ev3, ev4, ev5, ev6, ev7, ev8, ev9]
   const imageToShow = images.slice(0,no)
   const devs = [
     {
       name: "Muchiri",
       role: "Product Manager",
-      link: 'https://muchiri-the-dev.vercel.app/',
-      img: al1
+      link: 'https://muchiri-mwangi-com.vercel.app/',
+      img: assets.muchiri
     },{
       name: "Michael",
       role: "Frontend (Lead)",
-      link: 'https://muchiri-the-dev.vercel.app/',
-      img: al2
+      link: 'https://muchiri-mwangi-com.vercel.app/',
+      img: assets.michael
     },{
       name: "Victor",
       role: "Design (Lead)",
       link: '',
-      img: allThem
+      img: assets.rono
     },
   ]
 
   const alumni = [
     {
-      name: "Muchiri",
-      role: "AI Researcher and Data Analyst",
-      tech: ["R", "Python", "Ruby"],
-      exp: "I am skilled at uncovering insights from complex datasets and building predictive models to solve real-world challenges. I am passionate about leveraging data to make impactful decisions.",
-      link: 'https://muchiri-the-dev.vercel.app/',
-      img: al1
+      name: "Oyori",
+      role: "Data Scientist And Machine Learning Engineer",
+      tech: ["SQL","SPSS","Excel","R","Python","Ruby"],
+      exp: "Oyori excels in data science, machine learning, and strategic data insights. With strong communication skills and continuous learning, he empowers clients through actionable analytics and engagement in the tech community.",
+      link: 'https://www.linkedin.com/in/oyori-obegi/',
+      img: assets.oyori
+
     },
     {
       name: "Michael",
-      role: "Full-Stack Developer and Machine Learning Specialist",
-      tech: ["JavaScript", "Java", "React Native", "PostGreSQL", "MongoDB", "R", "Python", "Ruby"],
-      exp: "I have extensive experience in full-stack development, specializing in creating efficient, scalable applications powered by data science and machine learning principles.",
-      link: 'https://muchiri-the-dev.vercel.app/',
-      img: al2
-    },
-    {
+      role: "Data Scientist And Machine Learning Engineer",
+      tech: ["JavaScript","Java", "React Native", "PostGreSQL", "MongoDB","R","Python","Ruby"],
+      exp: "Passionate about Machine Learning and Python, leveraging tools like Seaborn, scikit-learn, and Django for data insights and web deployment. Continually learning, community-taught developer dedicated to harnessing technology for better decisions.",
+      link: 'https://www.linkedin.com/in/michael-ngecha/',
+      img: assets.michael
+    },{
       name: "Rono",
-      role: "Mobile Developer and Data Scientist",
-      tech: ["R", "Python", "Flutter", "Kotlin"],
-      exp: "I enjoy developing mobile and web applications while integrating data science solutions to optimize user experiences and performance.",
-      link: 'https://muchiri-the-dev.vercel.app/',
-      img: al3
+      role: "Machine Learning And Embedded Systems Engineer",
+      tech: ["Python", "MatLab","Embedded Systems", "PyTorch"],
+      exp: "Rono is a Machine Learning and Embedded Systems Engineer specializing in IoT, real-time AI solutions, and hardware-software integration, with expertise in Python, C++, microcontrollers, and system optimization for impactful applications.",
+      link: 'https://www.linkedin.com/in/rono-victor/',
+      img: assets.rono
+    },{
+      name: "Mary",
+      role: "Machine Learning Researcher",
+      tech: ["Python","SQL","Ruby","JAX"],
+      exp: "Mary is an AI/ML researcher, passionate about agricultural and environmental conservation, using machine learning to solve real-world problems. Proficient in Python, SQL, and Dash, she applies diverse algorithms effectively.",
+      link: 'https://muchiri-mwangi-com.vercel.app/',
+      img: assets.mary
     },
-  ]
+
+    
+    {
+      name: "Ombati",
+      role: "Data Scientist And Machine Learning Engineer",
+      tech: ["R" ,"Python","MatLab","JavaScript"],
+      exp: "Ombati is a versatile developer proficient in R, Python, JavaScript, and MATLAB. Expert in data analysis, machine learning, web development, and scientific computing. Passionate about crafting efficient, robust, and innovative solutions.",
+      link: 'https://www.linkedin.com/in/brian-ombati-ogeto/',
+      img: assets.ombati
+    },{
+      name: "Lucy",
+      role: "Data Scientist And Machine Learning Engineer",
+      tech: ["JavaScript","Python","React","Tailwind CSS"],
+      exp: "Lucy is a software developer with expertise in JavaScript, HTML, CSS, React, and Node.js.Enthusiastic about AI and machine learning, she excels in UI/UX design with Figma and thrives in collaborative environments.",
+      link: 'https://www.linkedin.com/in/lucy-alphonce-480a5a205/',
+      img: assets.lucy
+    },{
+      name: "Karani",
+      role: "Data Scientist And Machine Learning Engineer",
+      tech: ["R","React",'JavaScript','SQL'],
+      exp: "Karani is a Business Information Technology graduate skilled in R, React, and SQL. An active developer community advocate and an enthusiastic softball player, blending tech expertise with community engagement.",
+      link: 'https://www.linkedin.com/in/keith-karani-3794041a4/',
+      img: assets.karani
+    },{
+      name: "Oyori",
+      role: "Data Scientist And Machine Learning Engineer",
+      tech: ["SQL","SPSS","Excel","R","Python","Ruby"],
+      exp: "Oyori excels in data science, machine learning, and strategic data insights. With strong communication skills and continuous learning, he empowers clients through actionable analytics and engagement in the tech community.",
+      link: 'https://www.linkedin.com/in/oyori-obegi/',
+      img: assets.oyori
+    },{
+      name: "Nyongesa",
+      role: "Data Analysis, Machine Learning Engineer and Fullstack Development ",
+      tech: ["R","Python","SQL","Javascript","Django","SPSS"],
+      exp: "Nyongesa specializes in AI, machine learning, and big data in the reinsurance industry. Proficient in Elasticsearch, Kafka, and Kibana, he leverages advanced analytics to deliver actionable insights and drive strategic decisions.",
+      link: 'https://www.linkedin.com/in/kelvin-nyongesa/',
+      img: assets.nyongesa
+}]
   
   
   const alumniSliced = alumni.slice(0,alms)
@@ -96,7 +140,7 @@ const About = () => {
             From a humble beginning to a thriving community, our journey has been driven by passion, innovation, and the pursuit of excellence. We started with a simple idea — to bring like-minded people together and create something remarkable. Through dedication and hard work, we’ve grown into a powerful force, shaping the future of tech.
           </p>
           <p className='mb-4 text-gray-800 text-sm lg:text-base font-medium sm:text-start text-center w-full text-pretty '>
-            Our story is a testament to what can be achieved when creative minds come together, combining strengths in diverse fields like data science, machine learning, web development, and beyond. We pride ourselves on embracing challenges, learning from failures, and celebrating our victories, no matter how small.
+            Our story a testament to what can be achieved when creative minds come together, combining strengths in diverse fields like data science, machine learning, web development, and beyond. We pride ourselves on embracing challenges, learning from failures, and celebrating our victories, no matter how small.
           </p>
           <div className="w-full sm:h-20 h-14 flex items-center justify-center sm:justify-start">
             <Link to={'/registration'} className='bg-lightGreen h-3/4 flex justify-center gap-3 items-center sm:px-4 sm:py-2 px-2 py-1 text-white font-bold'>

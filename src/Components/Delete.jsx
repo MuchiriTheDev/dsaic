@@ -14,7 +14,7 @@ const Delete = ({ setPage}) => {
 
   const handleNextStep = () => {
     if (step === 2 && password.length < 6) {
-      setError("Please enter a valid password to confirm.");
+      setError("Please enter valid password to confirm.");
     } else if (step === 3 && username === "") {
       setError("Please enter your username to confirm.");
     } else if (step === 4 && confirmationText !== "DELETE") {

@@ -19,6 +19,16 @@ const Motive = () => {
             desc: "Be part of a vibrant community that encourages collaboration, peer learning, and shared growth in a friendly environment."
         },
     ]
+<<<<<<< HEAD
+  return (
+    <div className='w-full p-2 bg-white h-fit py-10 mb-4'>
+        {/* Heading */}
+        <div className="w-full h-fit p-0 py-3 md:p-3 mb-5">
+            <h2 className='text-gray-800 font-bold text-4xl mb-3  w-full text-center'>Our Motives</h2>
+            <p className='text-gray-500 font-medium text-base text-center w-full'>
+                At DSAIC we believe that there is no limit to learning. We embrace peer learning & community support
+            </p>
+=======
     return (
         <div className='w-full p-2 bg-white h-fit py-10 mb-4'>
             {/* Heading */}
@@ -43,6 +53,7 @@ const Motive = () => {
                     })
                 }
             </div>
+>>>>>>> f8da331de39fe562721b05a9f8b3d0b29a73ee16
         </div>
     )
 }

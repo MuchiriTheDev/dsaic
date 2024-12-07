@@ -1,11 +1,11 @@
 // import React from "react";
 import { useNavigate } from "react-router-dom";
-import Sidebar from "../Components/Sidebar";
+//import Sidebar from "../Components/Sidebar";
 import { useEffect, useState } from "react";
-import UpdatePage from "../Components/UpdatePage";
-import Delete from "../Components/Delete";
-import Settings from "../Components/Settings";
-import ErrorPage from "../Components/ErrorPage";
+//import UpdatePage from "../Components/UpdatePage";
+//import Delete from "../Components/Delete";
+//import Settings from "../Components/Settings";
+//import ErrorPage from "../Components/ErrorPage";
 
 const ProfilePage = () => {
   const navigate = useNavigate();

@@ -21,6 +21,7 @@ import hero from './Illustration.png'
 import associate from './Associate.png'
 import grow from './Grow.png'
 import mentors from './Mentors.png'
+import michael from './michael.jpg'
 import reg from './Registration.png'
 import ev1 from './Event 1.jpg'
 import ev2 from './Event 2.jpg'
@@ -31,13 +32,16 @@ import ev6 from './Event 6.jpg'
 import ev7 from './Event 7.jpg'
 import ev8 from './Event 8.jpg'
 import ev9 from './Event 9.jpg'
-import al1 from './al1.jpg'
-import al2 from './al2.jpg'
-import al3 from './al3.jpg'
-import al4 from './al4.jpg'
-import al5 from './al5.jpg'
-import al6 from './al6.jpg'
-import al7 from './al7.jpg'
+import muchiri from './muchiri.jpg'
+import oyori from './oyori.jpg'
+import karani from './karani.jpg'
+import nyongesa from './nyongesa.jpg'
+import ombati from "./ombati.jpg"
+import rono from './rono.jpg'
+import mary from './Mary.jpg'
+import lucy from './Lucy.jpg'
+import peter from './peter.jpg'
+import zein from './Zein.jpg'
 import main from "./Main One.jpg"
 import allThem from './All them.jpg'
 import hack from './hack.jpg'
@@ -80,13 +84,19 @@ export const assets = {
     ev7,heroHack,
     ev8,
     ev9,
-   al1,
-   al2,
-   al3,
-   al4,
-   al5,
-   al6,
-   al7,
+   muchiri,
+   ombati,
+   zein,
+   karani,
+   rono,
+   nyongesa,
+   oyori,
+   michael,
+   zein,
+   mary, 
+   lucy,
+   peter,
+   
    main,
    allThem
 }
